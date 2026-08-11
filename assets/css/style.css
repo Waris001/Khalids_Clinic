@@ -1,0 +1,2136 @@
+
+        :root {
+            --navy: #0c2438;
+            --navy-light: #123b59;
+            --gold: #c9a45c;
+            --gold-light: #e0c27c;
+            --white: #ffffff;
+            --light: #f7f8f9;
+            --text: #52606d;
+        }
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'DM Sans', sans-serif;
+            color: var(--text);
+            background: #ffffff;
+        }
+
+        h1, h2, h3, h4, h5 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* ========================================
+           TOP BAR
+        ======================================== */
+
+        .top-bar {
+            background: var(--navy);
+            color: rgba(255,255,255,0.85);
+            font-size: 13px;
+            padding: 9px 0;
+        }
+
+        .top-bar a {
+            color: rgba(255,255,255,0.9);
+            text-decoration: none;
+            transition: 0.3s;
+        }
+
+        .top-bar a:hover {
+            color: var(--gold-light);
+        }
+
+        .top-item {
+            display: flex;
+            align-items: center;
+            gap: 7px;
+        }
+
+        .top-item i {
+            color: var(--gold);
+        }
+
+
+        /* ========================================
+           MAIN HEADER
+        ======================================== */
+
+        .main-header {
+            background: rgba(255,255,255,0.97);
+            border-bottom: 1px solid rgba(12,36,56,0.08);
+            transition: all 0.3s ease;
+            z-index: 1000;
+        }
+
+        .main-header.scrolled {
+            box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+        }
+
+        .navbar {
+            padding: 18px 0;
+        }
+
+
+        /* ========================================
+           LOGO
+        ======================================== */
+
+        .clinic-brand {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: var(--navy);
+        }
+
+        .logo-symbol {
+            width: 52px;
+            height: 52px;
+            border: 1.5px solid var(--gold);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 13px;
+            position: relative;
+        }
+
+        .logo-symbol::before {
+            content: "";
+            width: 25px;
+            height: 25px;
+            border: 2px solid var(--gold);
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .logo-symbol i {
+            font-size: 19px;
+            color: var(--gold);
+            z-index: 2;
+            background: white;
+            padding: 2px;
+        }
+
+        .brand-text {
+            line-height: 1.15;
+        }
+
+        .brand-name {
+            font-family: 'Playfair Display', serif;
+            font-size: 21px;
+            font-weight: 600;
+            color: var(--navy);
+            display: block;
+        }
+
+        .brand-subtitle {
+            font-size: 9px;
+            letter-spacing: 2.5px;
+            text-transform: uppercase;
+            color: var(--gold);
+            margin-top: 4px;
+            display: block;
+        }
+
+
+        /* ========================================
+           NAVIGATION
+        ======================================== */
+
+        .navbar-nav {
+            gap: 7px;
+        }
+
+        .nav-link {
+            color: var(--navy) !important;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 10px 14px !important;
+            position: relative;
+            transition: 0.3s;
+        }
+
+        .nav-link::after {
+            content: "";
+            position: absolute;
+            left: 14px;
+            right: 14px;
+            bottom: 3px;
+            height: 1.5px;
+            background: var(--gold);
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 0.3s ease;
+        }
+
+        .nav-link:hover {
+            color: var(--gold) !important;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            transform: scaleX(1);
+        }
+
+
+        /* ========================================
+           APPOINTMENT BUTTON
+        ======================================== */
+
+        .appointment-btn {
+            background: var(--navy);
+            color: white;
+            border: 1px solid var(--navy);
+            padding: 12px 22px;
+            font-size: 13px;
+            font-weight: 600;
+            letter-spacing: 0.3px;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 9px;
+            transition: all 0.3s ease;
+        }
+
+        .appointment-btn:hover {
+            background: var(--gold);
+            border-color: var(--gold);
+            color: white;
+            transform: translateY(-2px);
+        }
+
+
+        /* ========================================
+           MOBILE MENU
+        ======================================== */
+
+        .navbar-toggler {
+            border: none;
+            padding: 8px;
+            box-shadow: none !important;
+        }
+
+        .navbar-toggler i {
+            font-size: 26px;
+            color: var(--navy);
+        }
+
+
+        /* ========================================
+           FOOTER
+        ======================================== */
+
+        .footer {
+            background: var(--navy);
+            color: rgba(255,255,255,0.72);
+            padding-top: 70px;
+        }
+
+        .footer-brand {
+            display: inline-block;
+            text-decoration: none;
+            color: white;
+            margin-bottom: 22px;
+        }
+
+        .footer-brand .brand-name {
+            color: white;
+            font-size: 24px;
+        }
+
+        .footer-brand .brand-subtitle {
+            color: var(--gold-light);
+        }
+
+        .footer-about {
+            font-size: 14px;
+            line-height: 1.8;
+            max-width: 350px;
+        }
+
+
+        /* Footer headings */
+
+        .footer-title {
+            color: white;
+            font-family: 'DM Sans', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+            margin-bottom: 23px;
+            position: relative;
+            padding-bottom: 12px;
+        }
+
+        .footer-title::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 32px;
+            height: 2px;
+            background: var(--gold);
+        }
+
+
+        /* Footer links */
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 12px;
+        }
+
+        .footer-links a {
+            color: rgba(255,255,255,0.65);
+            text-decoration: none;
+            font-size: 14px;
+            transition: 0.3s;
+        }
+
+        .footer-links a:hover {
+            color: var(--gold-light);
+            padding-left: 5px;
+        }
+
+
+        /* Contact */
+
+        .footer-contact {
+            display: flex;
+            gap: 12px;
+            margin-bottom: 18px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .footer-contact i {
+            color: var(--gold);
+            font-size: 17px;
+            margin-top: 2px;
+        }
+
+
+        /* Opening hours */
+
+        .hours-row {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+            padding: 9px 0;
+            font-size: 13px;
+        }
+
+        .hours-row span:last-child {
+            color: white;
+        }
+
+
+        /* Social icons */
+
+        /* ========================================
+   PREMIUM SOCIAL ICONS
+======================================== */
+
+.social-links {
+    display: flex;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.social-links a {
+    width: 44px;
+    height: 44px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255,255,255,0.8);
+
+    border: 1px solid rgba(201,164,92,0.35);
+
+    background: rgba(255,255,255,0.03);
+
+    text-decoration: none;
+
+    transition: all 0.35s ease;
+
+    position: relative;
+    overflow: hidden;
+}
+
+.social-links a::before {
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 100%;
+
+    background: var(--gold);
+
+    left: 0;
+    bottom: -100%;
+
+    transition: all 0.35s ease;
+
+    z-index: 0;
+}
+
+.social-links a i {
+    font-size: 17px;
+    position: relative;
+    z-index: 1;
+
+    transition: all 0.35s ease;
+}
+
+.social-links a:hover::before {
+    bottom: 0;
+}
+
+.social-links a:hover {
+    border-color: var(--gold);
+    color: white;
+
+    transform: translateY(-5px);
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.18);
+}
+
+.social-links a:hover i {
+    transform: scale(1.1);
+}
+
+
+        /* ========================================
+           FOOTER BOTTOM
+        ======================================== */
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            margin-top: 55px;
+            padding: 20px 0;
+            font-size: 12px;
+        }
+
+        .footer-bottom a {
+            color: rgba(255,255,255,0.7);
+            text-decoration: none;
+        }
+
+        .footer-bottom a:hover {
+            color: var(--gold-light);
+        }
+
+
+        /* ========================================
+           WHATSAPP / FLOATING BUTTON
+        ======================================== */
+
+        .floating-appointment {
+            position: fixed;
+            right: 25px;
+            bottom: 25px;
+            width: 52px;
+            height: 52px;
+            background: var(--gold);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            z-index: 999;
+            box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+            transition: 0.3s;
+        }
+
+        .floating-appointment:hover {
+            background: var(--navy);
+            color: white;
+            transform: translateY(-4px);
+        }
+
+        .floating-appointment i {
+            font-size: 22px;
+        }
+
+
+        /* ========================================
+           RESPONSIVE
+        ======================================== */
+
+        @media (max-width: 991px) {
+
+            .navbar-collapse {
+                background: white;
+                padding: 15px 0;
+                border-top: 1px solid rgba(0,0,0,0.06);
+                margin-top: 15px;
+            }
+
+            .navbar-nav {
+                gap: 0;
+            }
+
+            .nav-link {
+                padding: 12px 5px !important;
+            }
+
+            .nav-link::after {
+                display: none;
+            }
+
+            .header-appointment {
+                margin-top: 10px;
+            }
+        }
+
+        @media (max-width: 767px) {
+
+            .top-bar {
+                display: none;
+            }
+
+            .navbar {
+                padding: 13px 0;
+            }
+
+            /* .logo-symbol {
+                width: 45px;
+                height: 45px;
+            } */
+
+            .brand-name {
+                font-size: 18px;
+            }
+
+            .brand-subtitle {
+                font-size: 8px;
+                letter-spacing: 2px;
+            }
+
+            .footer {
+                padding-top: 50px;
+            }
+
+            .footer-column {
+                margin-bottom: 35px;
+            }
+        }
+
+        .clinic-logo {
+            width: 45px;
+            height: 45px;
+            object-fit: contain;
+            margin-right: 11px;
+        }
+
+        /* ========================================
+   BACK TO TOP
+======================================== */
+
+/* ========================================
+   PREMIUM ROUND BACK TO TOP
+======================================== */
+
+.back-to-top {
+    position: fixed;
+
+    right: 25px;
+    bottom: 90px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--navy);
+    color: var(--gold);
+
+    border: 1px solid var(--gold);
+
+    text-decoration: none;
+
+    opacity: 0;
+    visibility: hidden;
+
+    transform: translateY(15px);
+
+    transition: all 0.35s ease;
+
+    z-index: 998;
+
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.back-to-top i {
+    font-size: 19px;
+    transition: transform 0.3s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+}
+
+.back-to-top:hover {
+    background: var(--gold);
+    color: white;
+
+    border-color: var(--gold);
+
+    transform: translateY(-4px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.22);
+}
+
+.back-to-top:hover i {
+    transform: translateY(-2px);
+}
+
+
+/* Mobile */
+
+@media (max-width: 767px) {
+
+    .back-to-top {
+        width: 45px;
+        height: 45px;
+
+        right: 18px;
+        bottom: 80px;
+    }
+
+    .back-to-top i {
+        font-size: 17px;
+    }
+
+}
+/* ========================================
+   REVIEWS SECTION
+======================================== */
+
+.reviews-section {
+    background: #f7f8f9;
+    padding: 100px 0;
+}
+
+
+/* Review Card */
+
+.review-card {
+    height: 100%;
+    background: white;
+    padding: 38px 35px 32px;
+    border: 1px solid #e8ebed;
+    position: relative;
+    transition: all 0.35s ease;
+}
+
+
+.review-card:hover {
+    transform: translateY(-7px);
+    box-shadow: 0 20px 45px rgba(12,36,56,0.10);
+}
+
+
+.featured-review {
+    border-top: 2px solid #c9a45c;
+}
+
+
+/* Quote */
+
+.quote-icon {
+    position: absolute;
+    top: 25px;
+    right: 30px;
+    color: #e9dfca;
+    font-size: 45px;
+    line-height: 1;
+}
+
+
+/* Stars */
+
+.review-stars {
+    color: #c9a45c;
+    font-size: 13px;
+    margin-bottom: 22px;
+}
+
+
+.review-stars i {
+    margin-right: 2px;
+}
+
+
+/* Review text */
+
+.review-text {
+    color: #596875;
+    font-family: 'Playfair Display', serif;
+    font-size: 16px;
+    line-height: 1.8;
+    font-style: italic;
+    margin-bottom: 28px;
+}
+
+
+/* Author */
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    border-top: 1px solid #edf0f2;
+    padding-top: 20px;
+}
+
+
+.author-avatar {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #0c2438;
+    color: #c9a45c;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 17px;
+}
+
+
+.review-author h6 {
+    margin: 0 0 3px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: #0c2438;
+}
+
+
+.review-author span {
+    color: #8b959e;
+    font-size: 11px;
+}
+
+
+/* Overall rating */
+
+.overall-rating {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 55px;
+}
+
+
+.rating-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 42px;
+    color: #0c2438;
+    font-weight: 600;
+}
+
+
+.rating-stars {
+    color: #c9a45c;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+
+.overall-rating span {
+    font-size: 12px;
+    color: #7b858d;
+}
+
+
+@media (max-width: 767px) {
+
+    .reviews-section {
+        padding: 70px 0;
+    }
+
+    .review-card {
+        padding: 30px 25px;
+    }
+
+    .overall-rating {
+        margin-top: 40px;
+    }
+
+}
+
+/* ========================================
+   FAQ SECTION
+======================================== */
+
+.faq-section {
+    background: #ffffff;
+    padding: 100px 0;
+}
+
+
+/* Section Heading */
+
+.section-heading {
+    max-width: 700px;
+    margin: auto;
+}
+
+.section-eyebrow {
+    display: inline-block;
+    color: #c9a45c;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3px;
+    margin-bottom: 12px;
+}
+
+.section-heading h2 {
+    color: #0c2438;
+    font-size: 42px;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.heading-line {
+    width: 45px;
+    height: 2px;
+    background: #c9a45c;
+    margin: 0 auto 20px;
+}
+
+.section-heading p {
+    color: #6b7785;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* Accordion */
+
+.luxury-accordion {
+    border-top: 1px solid #e6e9ec;
+}
+
+.luxury-accordion .accordion-item {
+    border: none;
+    border-bottom: 1px solid #e6e9ec;
+    background: transparent;
+}
+
+
+.luxury-accordion .accordion-button {
+    background: white;
+    color: #0c2438;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 23px 25px;
+    box-shadow: none;
+}
+
+
+.luxury-accordion .accordion-button:not(.collapsed) {
+    color: #0c2438;
+    background: #fafbfc;
+}
+
+
+.luxury-accordion .accordion-button::after {
+    background-size: 14px;
+}
+
+
+.luxury-accordion .accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* Number */
+
+.faq-number {
+    color: #c9a45c;
+    font-size: 12px;
+    letter-spacing: 1px;
+    min-width: 42px;
+    font-weight: 600;
+}
+
+
+/* Answer */
+
+.luxury-accordion .accordion-body {
+    background: #fafbfc;
+    padding: 0 60px 25px 67px;
+    color: #687582;
+    font-size: 14px;
+    line-height: 1.9;
+}
+
+
+/* CTA */
+
+.faq-cta {
+    margin-top: 40px;
+}
+
+.faq-cta p {
+    color: #7a858f;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+
+.faq-contact-btn {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: #0c2438;
+    border: 1px solid #c9a45c;
+    padding: 11px 21px;
+    text-decoration: none;
+    font-size: 13px;
+    font-weight: 600;
+    transition: 0.3s;
+}
+
+
+.faq-contact-btn:hover {
+    background: #c9a45c;
+    color: white;
+}
+
+
+@media (max-width: 767px) {
+
+    .faq-section {
+        padding: 70px 0;
+    }
+
+    .section-heading h2 {
+        font-size: 32px;
+    }
+
+    .luxury-accordion .accordion-button {
+        padding: 20px 15px;
+        font-size: 14px;
+    }
+
+    .luxury-accordion .accordion-body {
+        padding: 0 20px 22px 57px;
+    }
+
+}
+
+/* =========================================
+       CONTACT PAGE VARIABLES
+    ========================================= */
+
+    .contact-page {
+        background: #ffffff;
+        color: #52606d;
+    }
+
+    .contact-navy {
+        color: #0c2438;
+    }
+
+    .contact-gold {
+        color: #c9a45c;
+    }
+
+    /* =========================================
+       PAGE HERO
+    ========================================= */
+
+    .contact-hero {
+    position: relative;
+    background:
+        linear-gradient(
+            rgba(12, 36, 56, 0.94),
+            rgba(12, 36, 56, 0.94)
+        ),
+        url('images/clinic-contact.jpg') center/cover no-repeat;
+
+    padding: 75px 0;
+    overflow: hidden;
+}
+
+.contact-hero-image {
+    width: 360px;
+    height: 360px;
+    border-radius: 50%;
+    object-fit: cover;
+
+    border: 5px solid rgba(255, 255, 255, 0.9);
+    box-shadow:
+        0 0 0 8px rgba(201, 164, 92, 0.45),
+        0 25px 60px rgba(0, 0, 0, 0.35);
+
+    display: block;
+    margin-left: auto;
+}
+
+@media (max-width: 991px) {
+
+    .contact-hero-image {
+        width: 280px;
+        height: 280px;
+        margin: 45px auto 0;
+    }
+
+}
+
+@media (max-width: 575px) {
+
+    .contact-hero-image {
+        width: 220px;
+        height: 220px;
+    }
+
+}
+    /* .contact-hero::after {
+        content: "";
+        position: absolute;
+        width: 220px;
+        height: 220px;
+        border: 1px solid rgba(201, 164, 92, 0.25);
+        border-radius: 50%;
+        right: 7%;
+        top: 50%;
+        transform: translateY(-50%);
+    } */
+
+    .hero-small-title {
+        color: #d9b96e;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 16px;
+    }
+
+    .contact-hero h1 {
+        color: #ffffff;
+        font-family: 'Playfair Display', serif;
+        font-size: clamp(42px, 5vw, 64px);
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .contact-hero p {
+        max-width: 650px;
+        color: rgba(255,255,255,0.78);
+        font-size: 16px;
+        line-height: 1.8;
+        margin-bottom: 0;
+    }
+
+    
+
+    /* =========================================
+       INTRODUCTION
+    ========================================= */
+
+    .contact-intro {
+        padding: 85px 0 65px;
+    }
+
+    .section-label {
+        color: #c9a45c;
+        text-transform: uppercase;
+        letter-spacing: 2.5px;
+        font-size: 11px;
+        font-weight: 700;
+        margin-bottom: 13px;
+    }
+
+    .section-heading {
+        font-family: 'Playfair Display', serif;
+        color: #0c2438;
+        font-size: clamp(30px, 4vw, 43px);
+        font-weight: 600;
+        line-height: 1.25;
+        margin-bottom: 18px;
+    }
+
+    .section-description {
+        color: #667481;
+        font-size: 15px;
+        line-height: 1.9;
+        max-width: 680px;
+    }
+
+
+    /* =========================================
+       CONTACT CARDS
+    ========================================= */
+
+    .contact-card {
+        height: 100%;
+        padding: 32px 28px;
+        background: #ffffff;
+        border: 1px solid #e9ecef;
+        position: relative;
+        transition: all 0.35s ease;
+    }
+
+    .contact-card::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 3px;
+        height: 0;
+        background: #c9a45c;
+        transition: height 0.35s ease;
+    }
+
+    .contact-card:hover {
+        transform: translateY(-6px);
+        box-shadow: 0 18px 45px rgba(12, 36, 56, 0.09);
+    }
+
+    .contact-card:hover::before {
+        height: 100%;
+    }
+
+    .contact-icon {
+        width: 52px;
+        height: 52px;
+        border: 1px solid rgba(201,164,92,0.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c9a45c;
+        font-size: 20px;
+        margin-bottom: 22px;
+    }
+
+    .contact-card h4 {
+        font-family: 'Playfair Display', serif;
+        color: #0c2438;
+        font-size: 22px;
+        margin-bottom: 12px;
+    }
+
+    .contact-card p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 8px;
+    }
+
+    .contact-card a {
+        color: #0c2438;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .contact-card a:hover {
+        color: #c9a45c;
+    }
+
+
+    /* =========================================
+       APPOINTMENT SECTION
+    ========================================= */
+
+    .appointment-section {
+        background: #f7f8f9;
+        padding: 85px 0;
+    }
+
+    .appointment-box {
+        background: #ffffff;
+        box-shadow: 0 20px 60px rgba(12,36,56,0.08);
+    }
+
+    .appointment-content {
+        padding: 50px;
+    }
+
+    .appointment-content h2 {
+        color: #0c2438;
+        font-family: 'Playfair Display', serif;
+        font-size: 36px;
+        line-height: 1.3;
+        margin-bottom: 16px;
+    }
+
+    .appointment-content > p {
+        font-size: 14px;
+        line-height: 1.8;
+        margin-bottom: 28px;
+    }
+
+    .appointment-benefit {
+        display: flex;
+        gap: 12px;
+        margin-bottom: 15px;
+        font-size: 14px;
+    }
+
+    .appointment-benefit i {
+        color: #c9a45c;
+        font-size: 17px;
+    }
+
+
+    /* =========================================
+       FORM
+    ========================================= */
+
+    .appointment-form {
+        padding: 50px;
+        background: #0c2438;
+    }
+
+    .appointment-form h3 {
+        color: #ffffff;
+        font-family: 'Playfair Display', serif;
+        font-size: 28px;
+        margin-bottom: 8px;
+    }
+
+    .appointment-form > p {
+        color: rgba(255,255,255,0.65);
+        font-size: 13px;
+        margin-bottom: 28px;
+    }
+
+    .form-label {
+        color: rgba(255,255,255,0.8);
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 7px;
+    }
+
+    .form-control,
+    .form-select {
+        border-radius: 0;
+        border: 1px solid rgba(255,255,255,0.14);
+        background: rgba(255,255,255,0.06);
+        color: #ffffff;
+        padding: 13px 14px;
+        font-size: 13px;
+        box-shadow: none !important;
+    }
+
+    .form-control::placeholder {
+        color: rgba(255,255,255,0.4);
+    }
+
+    .form-control:focus,
+    .form-select:focus {
+        border-color: #c9a45c;
+        background: rgba(255,255,255,0.08);
+        color: #ffffff;
+    }
+
+    .form-select option {
+        color: #0c2438;
+    }
+
+    .submit-btn {
+        width: 100%;
+        border: none;
+        background: #c9a45c;
+        color: #ffffff;
+        padding: 14px 22px;
+        font-size: 13px;
+        font-weight: 700;
+        letter-spacing: 0.4px;
+        transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+        background: #dfbd73;
+        transform: translateY(-2px);
+    }
+
+
+    /* =========================================
+       WHY CONTACT US
+    ========================================= */
+
+    .why-contact {
+        padding: 90px 0;
+    }
+
+    .reason {
+        display: flex;
+        gap: 18px;
+        margin-bottom: 30px;
+    }
+
+    .reason-number {
+        flex-shrink: 0;
+        width: 42px;
+        height: 42px;
+        border: 1px solid rgba(201,164,92,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #c9a45c;
+        font-family: 'Playfair Display', serif;
+    }
+
+    .reason h5 {
+        font-family: 'DM Sans', sans-serif;
+        color: #0c2438;
+        font-weight: 700;
+        font-size: 15px;
+        margin-bottom: 7px;
+    }
+
+    .reason p {
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+    /* =========================================
+       MAP
+    ========================================= */
+
+    .map-section {
+        padding-bottom: 90px;
+    }
+
+    .map-container {
+        height: 430px;
+        background: #eef1f3;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .map-container iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+        filter: grayscale(90%);
+    }
+
+    .map-info {
+        position: absolute;
+        left: 25px;
+        bottom: 25px;
+        background: #ffffff;
+        padding: 23px 25px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.12);
+        max-width: 310px;
+    }
+
+    .map-info h5 {
+        color: #0c2438;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 8px;
+    }
+
+    .map-info p {
+        font-size: 13px;
+        margin-bottom: 12px;
+        line-height: 1.6;
+    }
+
+    .directions-btn {
+        display: inline-block;
+        color: #0c2438;
+        font-size: 12px;
+        font-weight: 700;
+        text-decoration: none;
+        border-bottom: 1px solid #c9a45c;
+        padding-bottom: 3px;
+    }
+
+
+    /* =========================================
+       FAQ
+    ========================================= */
+
+    .faq-section {
+        background: #f7f8f9;
+        padding: 85px 0;
+    }
+
+    .faq-item {
+        background: #ffffff;
+        border: 1px solid #e7eaed;
+        margin-bottom: 12px;
+    }
+
+    .faq-item button {
+        width: 100%;
+        background: none;
+        border: none;
+        padding: 20px 23px;
+        text-align: left;
+        color: #0c2438;
+        font-size: 14px;
+        font-weight: 600;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .faq-item button i {
+        color: #c9a45c;
+        transition: 0.3s;
+    }
+
+    .faq-item button:not(.collapsed) i {
+        transform: rotate(45deg);
+    }
+
+    .faq-answer {
+        padding: 0 23px 20px;
+        color: #667481;
+        font-size: 13px;
+        line-height: 1.8;
+    }
+
+
+    /* =========================================
+       EMERGENCY NOTICE
+    ========================================= */
+
+    .emergency-section {
+        padding: 45px 0;
+        background: #c9a45c;
+    }
+
+    .emergency-content {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+    }
+
+    .emergency-icon {
+        width: 55px;
+        height: 55px;
+        border: 1px solid rgba(255,255,255,0.5);
+        color: #ffffff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+        flex-shrink: 0;
+    }
+
+    .emergency-content h4 {
+        color: #ffffff;
+        font-family: 'Playfair Display', serif;
+        margin-bottom: 5px;
+    }
+
+    .emergency-content p {
+        color: rgba(255,255,255,0.85);
+        font-size: 13px;
+        margin: 0;
+    }
+
+    .emergency-btn {
+        border: 1px solid #ffffff;
+        color: #ffffff;
+        text-decoration: none;
+        padding: 13px 23px;
+        white-space: nowrap;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .emergency-btn:hover {
+        background: #ffffff;
+        color: #0c2438;
+    }
+
+
+    /* =========================================
+       RESPONSIVE
+    ========================================= */
+
+    @media (max-width: 991px) {
+
+        .contact-hero {
+            padding: 75px 0;
+        }
+
+        .appointment-content,
+        .appointment-form {
+            padding: 38px;
+        }
+
+        .map-info {
+            max-width: 280px;
+        }
+
+    }
+
+    @media (max-width: 767px) {
+
+        .contact-hero {
+            padding: 60px 0;
+        }
+
+        .contact-intro,
+        .why-contact,
+        .appointment-section,
+        .faq-section {
+            padding: 60px 0;
+        }
+
+        .appointment-content,
+        .appointment-form {
+            padding: 30px 23px;
+        }
+
+        .appointment-content h2 {
+            font-size: 30px;
+        }
+
+        .map-container {
+            height: 350px;
+        }
+
+        .map-info {
+            left: 15px;
+            right: 15px;
+            bottom: 15px;
+            max-width: none;
+        }
+
+        .emergency-content {
+            align-items: flex-start;
+            flex-direction: column;
+        }
+
+        .emergency-btn {
+            margin-left: 70px;
+        }
+
+    }
+
+
+    /* =====================================================
+       ABOUT PAGE VARIABLES
+    ===================================================== */
+
+    :root {
+        --about-navy: #0c2438;
+        --about-navy-light: #123b59;
+        --about-gold: #c9a45c;
+        --about-gold-light: #e0c27c;
+        --about-light: #f7f8f9;
+        --about-text: #5c6873;
+        --about-border: rgba(12, 36, 56, 0.10);
+    }
+
+    .about-page {
+        overflow: hidden;
+        background: #ffffff;
+    }
+
+
+    /* =====================================================
+       COMMON
+    ===================================================== */
+
+    .about-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--about-gold);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 2.5px;
+        text-transform: uppercase;
+        margin-bottom: 16px;
+    }
+
+    .about-eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 1px;
+        background: var(--about-gold);
+    }
+
+    .about-heading {
+        font-family: "Playfair Display", serif;
+        color: var(--about-navy);
+        font-size: clamp(34px, 4vw, 52px);
+        line-height: 1.15;
+        font-weight: 600;
+        margin-bottom: 20px;
+    }
+
+    .about-heading span {
+        color: var(--about-gold);
+    }
+
+    .about-description {
+        color: var(--about-text);
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+
+    /* =====================================================
+       PAGE HERO
+    ===================================================== */
+
+    .about-hero {
+        position: relative;
+        min-height: 420px;
+        display: flex;
+        align-items: center;
+        background:
+            linear-gradient(
+                90deg,
+                rgba(8, 29, 45, 0.97) 0%,
+                rgba(8, 29, 45, 0.90) 45%,
+                rgba(8, 29, 45, 0.55) 100%
+            ),
+            url("https://images.unsplash.com/photo-1551601651-2a8555f1a136?auto=format&fit=crop&w=2000&q=85")
+            center/cover no-repeat;
+    }
+
+    .about-hero-content {
+        max-width: 760px;
+        color: white;
+        padding: 80px 0;
+    }
+
+    .about-hero-label {
+        display: inline-block;
+        color: var(--about-gold-light);
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        margin-bottom: 18px;
+    }
+
+    .about-hero h1 {
+        font-family: "Playfair Display", serif;
+        font-size: clamp(42px, 6vw, 70px);
+        line-height: 1.05;
+        font-weight: 600;
+        margin-bottom: 22px;
+    }
+
+    .about-hero h1 span {
+        color: var(--about-gold-light);
+    }
+
+    .about-hero p {
+        max-width: 650px;
+        font-size: 17px;
+        line-height: 1.8;
+        color: rgba(255,255,255,0.82);
+        margin-bottom: 0;
+    }
+
+    .hero-line {
+        width: 60px;
+        height: 2px;
+        background: var(--about-gold);
+        margin-top: 28px;
+    }
+
+
+    /* =====================================================
+       DOCTOR INTRODUCTION
+    ===================================================== */
+
+    .doctor-section {
+        padding: 100px 0;
+        background: #ffffff;
+    }
+
+    .doctor-image-wrapper {
+        position: relative;
+        padding-right: 35px;
+    }
+
+    .doctor-image {
+        width: 100%;
+        height: 590px;
+        object-fit: cover;
+        display: block;
+        position: relative;
+        z-index: 2;
+    }
+
+    .doctor-image-frame {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        border: 1px solid var(--about-gold);
+        right: 0;
+        bottom: -25px;
+        z-index: 1;
+    }
+
+    .doctor-image-caption {
+        position: absolute;
+        z-index: 3;
+        left: -20px;
+        bottom: 25px;
+        background: var(--about-navy);
+        color: white;
+        padding: 20px 25px;
+        min-width: 220px;
+        box-shadow: 0 12px 35px rgba(0,0,0,0.18);
+    }
+
+    .doctor-image-caption strong {
+        display: block;
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        margin-bottom: 4px;
+    }
+
+    .doctor-image-caption span {
+        font-size: 11px;
+        color: var(--about-gold-light);
+        letter-spacing: 1.5px;
+        text-transform: uppercase;
+    }
+
+
+    .doctor-content {
+        padding-left: 30px;
+    }
+
+    .doctor-name {
+        font-family: "Playfair Display", serif;
+        font-size: 44px;
+        color: var(--about-navy);
+        margin-bottom: 5px;
+    }
+
+    .doctor-qualification {
+        color: var(--about-gold);
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 1px;
+        margin-bottom: 25px;
+    }
+
+    .doctor-position {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--about-light);
+        border-left: 3px solid var(--about-gold);
+        padding: 12px 16px;
+        margin-bottom: 25px;
+        color: var(--about-navy);
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .doctor-position i {
+        color: var(--about-gold);
+    }
+
+    .doctor-content p {
+        color: var(--about-text);
+        font-size: 15px;
+        line-height: 1.9;
+        margin-bottom: 18px;
+    }
+
+
+    /* =====================================================
+       DOCTOR CREDENTIALS
+    ===================================================== */
+
+    .credentials-section {
+        background: var(--about-light);
+        padding: 80px 0;
+    }
+
+    .credential-card {
+        height: 100%;
+        background: #ffffff;
+        border: 1px solid var(--about-border);
+        padding: 30px 25px;
+        transition: all 0.35s ease;
+    }
+
+    .credential-card:hover {
+        transform: translateY(-7px);
+        box-shadow: 0 18px 40px rgba(12,36,56,0.09);
+        border-color: rgba(201,164,92,0.4);
+    }
+
+    .credential-icon {
+        width: 50px;
+        height: 50px;
+        border: 1px solid rgba(201,164,92,0.45);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+
+    .credential-icon i {
+        color: var(--about-gold);
+        font-size: 21px;
+    }
+
+    .credential-card h4 {
+        font-family: "DM Sans", sans-serif;
+        color: var(--about-navy);
+        font-size: 16px;
+        font-weight: 700;
+        margin-bottom: 9px;
+    }
+
+    .credential-card p {
+        color: var(--about-text);
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       PHILOSOPHY
+    ===================================================== */
+
+    .philosophy-section {
+        padding: 100px 0;
+        position: relative;
+    }
+
+    .philosophy-content {
+        max-width: 700px;
+    }
+
+    .philosophy-quote {
+        position: relative;
+        padding: 30px 0 30px 35px;
+        border-left: 2px solid var(--about-gold);
+        margin-top: 30px;
+    }
+
+    .philosophy-quote p {
+        font-family: "Playfair Display", serif;
+        color: var(--about-navy);
+        font-size: 25px;
+        line-height: 1.5;
+        margin: 0;
+    }
+
+    .philosophy-image {
+        width: 100%;
+        height: 470px;
+        object-fit: cover;
+    }
+
+
+    /* =====================================================
+       CLINIC INTRODUCTION
+    ===================================================== */
+
+    .clinic-section {
+        padding: 100px 0;
+        background: var(--about-light);
+    }
+
+    .clinic-image {
+        width: 100%;
+        height: 480px;
+        object-fit: cover;
+    }
+
+    .clinic-content {
+        padding-left: 45px;
+    }
+
+    .clinic-name {
+        font-family: "Playfair Display", serif;
+        color: var(--about-navy);
+        font-size: 38px;
+        line-height: 1.25;
+        margin-bottom: 20px;
+    }
+
+    .clinic-name span {
+        color: var(--about-gold);
+    }
+
+    .clinic-content p {
+        color: var(--about-text);
+        font-size: 15px;
+        line-height: 1.9;
+        margin-bottom: 18px;
+    }
+
+    .clinic-highlight {
+        display: flex;
+        gap: 15px;
+        margin-top: 30px;
+        padding-top: 25px;
+        border-top: 1px solid var(--about-border);
+    }
+
+    .clinic-highlight i {
+        color: var(--about-gold);
+        font-size: 23px;
+    }
+
+    .clinic-highlight strong {
+        display: block;
+        color: var(--about-navy);
+        font-size: 14px;
+        margin-bottom: 3px;
+    }
+
+    .clinic-highlight span {
+        color: var(--about-text);
+        font-size: 13px;
+    }
+
+
+    /* =====================================================
+       TRUST SECTION
+    ===================================================== */
+
+    .trust-section {
+        padding: 85px 0;
+        background: var(--about-navy);
+        color: white;
+    }
+
+    .trust-heading {
+        font-family: "Playfair Display", serif;
+        color: white;
+        font-size: 42px;
+        margin-bottom: 18px;
+    }
+
+    .trust-description {
+        color: rgba(255,255,255,0.68);
+        font-size: 14px;
+        line-height: 1.8;
+        max-width: 650px;
+        margin: auto;
+    }
+
+    .trust-item {
+        text-align: center;
+        padding: 30px 20px;
+        border-right: 1px solid rgba(255,255,255,0.10);
+    }
+
+    .trust-item:last-child {
+        border-right: none;
+    }
+
+    .trust-icon {
+        width: 60px;
+        height: 60px;
+        border: 1px solid rgba(201,164,92,0.5);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 0 auto 18px;
+    }
+
+    .trust-icon i {
+        color: var(--about-gold-light);
+        font-size: 24px;
+    }
+
+    .trust-item h4 {
+        font-family: "DM Sans", sans-serif;
+        color: white;
+        font-size: 15px;
+        font-weight: 600;
+        margin-bottom: 8px;
+    }
+
+    .trust-item p {
+        color: rgba(255,255,255,0.6);
+        font-size: 12px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       CTA
+    ===================================================== */
+
+    .about-cta {
+        padding: 90px 0;
+        background:
+            linear-gradient(
+                rgba(12,36,56,0.94),
+                rgba(12,36,56,0.94)
+            ),
+            url("https://images.unsplash.com/photo-1584982751601-97dcc096659c?auto=format&fit=crop&w=1800&q=85")
+            center/cover;
+    }
+
+    .about-cta h2 {
+        font-family: "Playfair Display", serif;
+        color: white;
+        font-size: clamp(32px, 4vw, 48px);
+        margin-bottom: 15px;
+    }
+
+    .about-cta p {
+        color: rgba(255,255,255,0.72);
+        font-size: 15px;
+        max-width: 620px;
+        margin: 0 auto 30px;
+        line-height: 1.8;
+    }
+
+    .cta-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--about-gold);
+        color: white;
+        padding: 14px 28px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.3s ease;
+    }
+
+    .cta-button:hover {
+        background: var(--about-gold-light);
+        color: var(--about-navy);
+        transform: translateY(-3px);
+    }
+
+    .cta-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        border: 1px solid rgba(255,255,255,0.35);
+        padding: 13px 25px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        margin-left: 10px;
+        transition: 0.3s;
+    }
+
+    .cta-secondary:hover {
+        border-color: var(--about-gold);
+        color: var(--about-gold-light);
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 991px) {
+
+        .doctor-section,
+        .philosophy-section,
+        .clinic-section {
+            padding: 75px 0;
+        }
+
+        .doctor-content {
+            padding-left: 0;
+            margin-top: 55px;
+        }
+
+        .clinic-content {
+            padding-left: 0;
+            margin-top: 45px;
+        }
+
+        .doctor-image-wrapper {
+            padding-right: 20px;
+        }
+
+        .trust-item {
+            border-right: none;
+            border-bottom: 1px solid rgba(255,255,255,0.10);
+        }
+
+        .trust-item:last-child {
+            border-bottom: none;
+        }
+    }
+
+
+    @media (max-width: 767px) {
+
+        .about-hero {
+            min-height: 400px;
+        }
+
+        .about-hero-content {
+            padding: 60px 15px;
+        }
+
+        .doctor-image {
+            height: 450px;
+        }
+
+        .doctor-image-caption {
+            left: 10px;
+            bottom: 20px;
+        }
+
+        .doctor-name {
+            font-size: 35px;
+        }
+
+        .philosophy-image {
+            height: 350px;
+            margin-top: 40px;
+        }
+
+        .clinic-image {
+            height: 350px;
+        }
+
+        .clinic-name {
+            font-size: 32px;
+        }
+
+        .cta-secondary {
+            margin-left: 0;
+            margin-top: 12px;
+        }
+
+    }
