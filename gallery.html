@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
+    <!-- <link rel="stylesheet" href="gallery.css"> -->
 
 </head>
 
@@ -193,55 +194,39 @@
 <!-- =====================================================
      PAGE CONTENT PLACEHOLDER
 ===================================================== -->
-<!-- =========================================================
-     FACILITIES PAGE
-     DR. KHALID'S GASTROCARE & SURGICAL CLINIC
-========================================================= -->
-<!-- 
-:root {
-    --facility-navy: #0c2438;
-    --facility-navy-2: #123b59;
-    --facility-gold: #c9a45c;
-    --facility-gold-light: #e0c27c;
-    --facility-white: #ffffff;
-    --facility-light: #f5f7f8;
-    --facility-text: #61707c;
-} -->
 
 
-
-
-<div class="facilities-page">
+<div class="gallery-page">
 
 
 <!-- =====================================================
      HERO
 ===================================================== -->
 
-<section class="facility-hero">
+<section class="gallery-hero">
 
 <div class="container">
 
-<div class="facility-hero-content">
+<div class="gallery-hero-content">
 
-<span class="facility-label">
-    Our Clinic
+<span class="gallery-label">
+    Our Gallery
 </span>
 
 <h1>
 
-    Designed Around
+    A Glimpse Into
     <br>
 
-    <span>Your Comfort & Care.</span>
+    <span>Our Care Environment.</span>
 
 </h1>
 
 <p>
 
-    A modern clinical environment where thoughtful
-    consultation, professional surgical care and patient
-    comfort come together.
+    Explore the clinical environment, facilities and
+    patient-focused spaces at Dr. Khalid's Gastrocare
+    & Surgical Clinic.
 
 </p>
 
@@ -257,36 +242,27 @@
      INTRO
 ===================================================== -->
 
-<section class="facility-intro">
+<section class="gallery-intro">
 
 <div class="container">
 
-<div class="facility-intro-box">
-
-<span class="facility-eyebrow">
-    Facilities & Environment
+<span class="gallery-eyebrow">
+    Clinic Gallery
 </span>
 
-<h2 class="facility-heading">
+<h2>
 
-    A Comfortable Environment
-    <span>for Better Care</span>
+    Experience Our
+    <span>Clinical Environment</span>
 
 </h2>
 
-<p class="facility-description">
+<p>
 
-    At Dr. Khalid's Gastrocare & Surgical Clinic,
-    we believe that quality healthcare begins with a
-    comfortable and professional environment.
-
-    From consultation to follow-up, every aspect of
-    the patient experience is designed around
-    convenience, privacy and attentive care.
+    Take a closer look at our clinic, consultation spaces
+    and professional healthcare environment.
 
 </p>
-
-</div>
 
 </div>
 
@@ -295,130 +271,84 @@
 
 
 <!-- =====================================================
-     FEATURED FACILITY
+     GALLERY
 ===================================================== -->
 
-<section class="featured-facility">
+<section class="gallery-wrapper">
 
 <div class="container">
 
-<div class="row align-items-center g-lg-5">
 
-<div class="col-lg-6">
+<!-- FILTER -->
 
-<div class="facility-image-wrap">
+<div class="gallery-filter">
+
+<button
+class="active"
+data-filter="all">
+
+All
+
+</button>
+
+<button
+data-filter="clinic">
+
+Clinic
+
+</button>
+
+<button
+data-filter="consultation">
+
+Consultation
+
+</button>
+
+<button
+data-filter="care">
+
+Patient Care
+
+</button>
+
+<button
+data-filter="surgical">
+
+Surgical
+
+</button>
+
+</div>
+
+
+
+<!-- GALLERY GRID -->
+
+<div class="gallery-grid">
+
+
+<!-- 01 -->
+
+<div class="gallery-item"
+data-category="clinic">
 
 <img
 src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=1200&q=90"
-class="facility-main-image"
-alt="Modern clinic">
+alt="Clinic interior">
 
-<div class="facility-image-badge">
-
-<strong>
-    Professional Clinical Environment
-</strong>
+<div class="gallery-overlay">
 
 <span>
-    DR. KHALID'S GASTROCARE & SURGICAL CLINIC
+Clinic
 </span>
-
-</div>
-
-</div>
-
-</div>
-
-
-<div class="col-lg-6">
-
-<div class="featured-content">
-
-<span class="facility-eyebrow">
-    Patient Experience
-</span>
-
-<h2 class="facility-heading">
-
-    Care That Begins
-    <span>Before Treatment</span>
-
-</h2>
-
-<p>
-
-    A calm and organized clinical environment helps
-    patients feel comfortable while discussing their
-    concerns and understanding their treatment options.
-
-</p>
-
-<p>
-
-    Our focus is on maintaining a professional setting
-    where patients and families can receive clear
-    guidance and attentive clinical care.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FACILITY GALLERY
-===================================================== -->
-
-<section class="facility-grid">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="facility-eyebrow">
-    Explore Our Facilities
-</span>
-
-<h2 class="facility-heading">
-
-    A Space Designed for
-    <span>Patient Comfort</span>
-
-</h2>
-
-</div>
-
-
-<div class="row g-4">
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="facility-card">
-
-<img
-src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1000&q=85"
-alt="Clinic reception">
-
-<div class="facility-card-content">
 
 <h3>
-    Reception Area
+Modern Clinical Environment
 </h3>
 
-<p>
-    A welcoming and organized space for patients
-    and accompanying family members.
-</p>
-
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
 </div>
 
 </div>
@@ -427,202 +357,28 @@ alt="Clinic reception">
 
 
 
-<div class="col-md-6 col-lg-4">
+<!-- 02 -->
 
-<div class="facility-card">
+<div class="gallery-item"
+data-category="consultation">
 
 <img
-src="https://images.unsplash.com/photo-1512678080530-7760d81f95da?auto=format&fit=crop&w=1000&q=85"
+src="https://images.unsplash.com/photo-1512678080530-7760d81f95da?auto=format&fit=crop&w=1000&q=90"
 alt="Consultation room">
 
-<div class="facility-card-content">
+<div class="gallery-overlay">
 
-<h3>
-    Consultation Rooms
-</h3>
-
-<p>
-    Private spaces for detailed discussion,
-    clinical evaluation and treatment planning.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="facility-card">
-
-<img
-src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=85"
-alt="Medical facility">
-
-<div class="facility-card-content">
-
-<h3>
-    Clinical Facilities
-</h3>
-
-<p>
-    Professional facilities supporting clinical
-    evaluation and patient care.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="facility-card">
-
-<img
-src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?auto=format&fit=crop&w=1000&q=85"
-alt="Medical equipment">
-
-<div class="facility-card-content">
-
-<h3>
-    Modern Equipment
-</h3>
-
-<p>
-    Appropriate medical equipment supporting
-    professional clinical care.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="facility-card">
-
-<img
-src="https://images.unsplash.com/photo-1638202993928-7d113b8d4b1c?auto=format&fit=crop&w=1000&q=85"
-alt="Patient care">
-
-<div class="facility-card-content">
-
-<h3>
-    Patient Care
-</h3>
-
-<p>
-    A patient-focused approach throughout the
-    consultation and treatment journey.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-6 col-lg-4">
-
-<div class="facility-card">
-
-<img
-src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=85"
-alt="Hospital environment">
-
-<div class="facility-card-content">
-
-<h3>
-    Surgical Care Environment
-</h3>
-
-<p>
-    Access to appropriate surgical and hospital
-    facilities as clinically required.
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-
-</div>
-
-</div>
-
-</section>
-
-
-
-<!-- =====================================================
-     FEATURES
-===================================================== -->
-
-<section class="facility-features">
-
-<div class="container">
-
-<div class="text-center mb-5">
-
-<span class="facility-eyebrow">
-    Our Commitment
+<span>
+Consultation
 </span>
 
-<h2 class="facility-heading">
+<h3>
+Private Consultation Space
+</h3>
 
-    More Than a Clinic.
-    <span>A Complete Care Experience.</span>
-
-</h2>
-
-<p class="facility-description mx-auto"
-style="max-width:700px;">
-
-    Every element of our practice is guided by
-    professionalism, communication and respect
-    for the patient.
-
-</p>
-
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
 </div>
-
-
-<div class="row g-4">
-
-
-<div class="col-md-6 col-lg-3">
-
-<div class="feature-item">
-
-<div class="feature-icon">
-
-<i class="bi bi-person-check"></i>
-
-</div>
-
-<h4>
-    Patient-Centred Care
-</h4>
-
-<p>
-    Understanding the patient's concerns and
-    providing personalized clinical guidance.
-</p>
 
 </div>
 
@@ -630,49 +386,28 @@ style="max-width:700px;">
 
 
 
-<div class="col-md-6 col-lg-3">
+<!-- 03 -->
 
-<div class="feature-item">
+<div class="gallery-item"
+data-category="care">
 
-<div class="feature-icon">
+<img
+src="https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1000&q=90"
+alt="Hospital facility">
 
-<i class="bi bi-shield-check"></i>
+<div class="gallery-overlay">
 
+<span>
+Patient Care
+</span>
+
+<h3>
+Professional Care Environment
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
 </div>
-
-<h4>
-    Professional Standards
-</h4>
-
-<p>
-    A professional environment focused on
-    responsible clinical care.
-</p>
-
-</div>
-
-</div>
-
-
-
-<div class="col-md-6 col-lg-3">
-
-<div class="feature-item">
-
-<div class="feature-icon">
-
-<i class="bi bi-lock"></i>
-
-</div>
-
-<h4>
-    Privacy & Comfort
-</h4>
-
-<p>
-    Respectful consultation and attention to
-    patient privacy.
-</p>
 
 </div>
 
@@ -680,24 +415,173 @@ style="max-width:700px;">
 
 
 
-<div class="col-md-6 col-lg-3">
+<!-- 04 -->
 
-<div class="feature-item">
+<div class="gallery-item"
+data-category="surgical">
 
-<div class="feature-icon">
+<img
+src="https://images.unsplash.com/photo-1551076805-e1869033e561?auto=format&fit=crop&w=1200&q=90"
+alt="Surgical environment">
 
-<i class="bi bi-chat-square-text"></i>
+<div class="gallery-overlay">
+
+<span>
+Surgical
+</span>
+
+<h3>
+Advanced Surgical Environment
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
 
 </div>
 
-<h4>
-    Clear Communication
-</h4>
+</div>
 
-<p>
-    Helping patients understand their condition
-    and treatment options.
-</p>
+
+
+<!-- 05 -->
+
+<div class="gallery-item"
+data-category="clinic">
+
+<img
+src="https://images.unsplash.com/photo-1519494080410-f9aa76cb4283?auto=format&fit=crop&w=1000&q=90"
+alt="Reception">
+
+<div class="gallery-overlay">
+
+<span>
+Clinic
+</span>
+
+<h3>
+Welcoming Reception
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- 06 -->
+
+<div class="gallery-item"
+data-category="care">
+
+<img
+src="https://images.unsplash.com/photo-1638202993928-7d113b8d4b1c?auto=format&fit=crop&w=1000&q=90"
+alt="Patient care">
+
+<div class="gallery-overlay">
+
+<span>
+Patient Care
+</span>
+
+<h3>
+Focused Patient Care
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- 07 -->
+
+<div class="gallery-item"
+data-category="surgical">
+
+<img
+src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=90"
+alt="Surgical facility">
+
+<div class="gallery-overlay">
+
+<span>
+Surgical
+</span>
+
+<h3>
+Surgical Care Facilities
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- 08 -->
+
+<div class="gallery-item"
+data-category="clinic">
+
+<img
+src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=90"
+alt="Medical facility">
+
+<div class="gallery-overlay">
+
+<span>
+Clinic
+</span>
+
+<h3>
+Professional Medical Setting
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
+
+</div>
+
+</div>
+
+
+
+<!-- 09 -->
+
+<div class="gallery-item"
+data-category="consultation">
+
+<img
+src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=90"
+alt="Consultation">
+
+<div class="gallery-overlay">
+
+<span>
+Consultation
+</span>
+
+<h3>
+Patient Consultation
+</h3>
+
+<div class="gallery-zoom">
+<i class="bi bi-arrows-fullscreen"></i>
+</div>
 
 </div>
 
@@ -716,31 +600,30 @@ style="max-width:700px;">
      CTA
 ===================================================== -->
 
-<section class="facility-cta">
+<section class="gallery-cta">
 
 <div class="container">
 
-<span class="facility-eyebrow"
+<span class="gallery-eyebrow"
 style="justify-content:center;">
 
-    Visit Our Clinic
+    Dr. Khalid's Gastrocare & Surgical Clinic
 
 </span>
 
 <h2>
-    Your Comfort Matters to Us.
+    Have Questions About Your Condition?
 </h2>
 
 <p>
 
     Schedule a consultation with Dr. Khalid Noman
-    and take the first step toward understanding
-    your surgical condition.
+    and discuss your symptoms, diagnosis and
+    treatment options.
 
 </p>
 
-<a href="#appointment"
-class="facility-btn">
+<a href="#appointment">
 
 <i class="bi bi-calendar-check"></i>
 
@@ -754,6 +637,64 @@ Book a Consultation
 
 
 </div>
+
+
+
+<!-- =====================================================
+     LIGHTBOX
+===================================================== -->
+
+<div class="gallery-lightbox"
+id="galleryLightbox">
+
+<button
+class="lightbox-close"
+id="lightboxClose">
+
+<i class="bi bi-x-lg"></i>
+
+</button>
+
+
+<button
+class="lightbox-prev"
+id="lightboxPrev">
+
+<i class="bi bi-chevron-left"></i>
+
+</button>
+
+
+<img
+src=""
+alt=""
+class="lightbox-image"
+id="lightboxImage">
+
+
+<button
+class="lightbox-next"
+id="lightboxNext">
+
+<i class="bi bi-chevron-right"></i>
+
+</button>
+
+
+<div
+class="lightbox-caption"
+id="lightboxCaption">
+</div>
+
+</div>
+
+
+
+
+
+
+<script src="gallery.js"></script>
+
 
 <!-- BACK TO TOP -->
 <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
