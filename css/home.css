@@ -1,0 +1,846 @@
+
+    /* =====================================================
+       HOME PAGE THEME
+    ===================================================== */
+
+    :root {
+        --home-navy: #123047;
+        --home-navy-dark: #0b2639;
+        --home-gold: #c5a05a;
+        --home-gold-light: #dfc27d;
+        --home-cream: #faf9f6;
+        --home-soft: #f4f6f7;
+        --home-text: #5e6b75;
+        --home-border: rgba(18, 48, 71, 0.10);
+    }
+
+    .home-page {
+        background: #ffffff;
+        color: var(--home-text);
+        overflow: hidden;
+    }
+
+    .home-page img {
+        max-width: 100%;
+    }
+
+
+    /* =====================================================
+       COMMON
+    ===================================================== */
+
+    .home-eyebrow {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--home-gold);
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2.7px;
+        text-transform: uppercase;
+        margin-bottom: 15px;
+    }
+
+    .home-eyebrow::before {
+        content: "";
+        width: 32px;
+        height: 1px;
+        background: var(--home-gold);
+    }
+
+    .home-title {
+        font-family: "Playfair Display", serif;
+        color: var(--home-navy);
+        font-size: clamp(36px, 4.5vw, 58px);
+        font-weight: 600;
+        line-height: 1.12;
+        margin-bottom: 20px;
+    }
+
+    .home-title span {
+        color: var(--home-gold);
+    }
+
+    .home-text {
+        color: var(--home-text);
+        font-size: 15px;
+        line-height: 1.9;
+    }
+
+    .home-section {
+        padding: 100px 0;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .home-hero {
+        position: relative;
+        min-height: 690px;
+        display: flex;
+        align-items: center;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(255,255,255,0.97) 0%,
+                rgba(255,255,255,0.91) 40%,
+                rgba(255,255,255,0.35) 72%,
+                rgba(255,255,255,0.05) 100%
+            ),
+            url("https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=2000&q=90")
+            center right / cover no-repeat;
+    }
+
+    .home-hero-content {
+        max-width: 680px;
+        padding: 80px 0;
+    }
+
+    .home-hero-kicker {
+        display: inline-block;
+        color: var(--home-navy);
+        background: rgba(255,255,255,0.8);
+        border-left: 3px solid var(--home-gold);
+        padding: 9px 14px;
+        font-size: 11px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-bottom: 22px;
+    }
+
+    .home-hero h1 {
+        font-family: "Playfair Display", serif;
+        color: var(--home-navy);
+        font-size: clamp(45px, 6vw, 76px);
+        line-height: 1.03;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+
+    .home-hero h1 span {
+        color: var(--home-gold);
+    }
+
+    .home-hero p {
+        max-width: 590px;
+        color: #53616b;
+        font-size: 17px;
+        line-height: 1.85;
+        margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .hero-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--home-navy);
+        color: white;
+        padding: 15px 27px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .hero-primary:hover {
+        background: var(--home-gold);
+        color: white;
+        transform: translateY(-3px);
+    }
+
+    .hero-secondary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: var(--home-navy);
+        border: 1px solid var(--home-border);
+        background: rgba(255,255,255,0.85);
+        padding: 14px 24px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .hero-secondary:hover {
+        border-color: var(--home-gold);
+        color: var(--home-gold);
+    }
+
+    .hero-credentials {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-top: 45px;
+    }
+
+    .hero-credential {
+        padding-left: 15px;
+        border-left: 1px solid var(--home-gold);
+    }
+
+    .hero-credential strong {
+        display: block;
+        color: var(--home-navy);
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .hero-credential span {
+        color: #71808a;
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       DOCTOR INTRO
+    ===================================================== */
+
+    .doctor-home {
+        background: white;
+    }
+
+    .doctor-home-image-wrap {
+        position: relative;
+        padding-right: 35px;
+    }
+
+    .doctor-home-image {
+        width: 100%;
+        height: 610px;
+        object-fit: cover;
+        display: block;
+    }
+
+    .doctor-image-accent {
+        position: absolute;
+        width: 180px;
+        height: 180px;
+        right: 0;
+        bottom: -25px;
+        border: 1px solid var(--home-gold);
+        z-index: 0;
+    }
+
+    .doctor-home-badge {
+        position: absolute;
+        left: -20px;
+        bottom: 25px;
+        background: white;
+        padding: 20px 24px;
+        box-shadow: 0 15px 40px rgba(18,48,71,0.12);
+        z-index: 3;
+        min-width: 220px;
+    }
+
+    .doctor-home-badge strong {
+        display: block;
+        color: var(--home-navy);
+        font-family: "Playfair Display", serif;
+        font-size: 19px;
+        margin-bottom: 4px;
+    }
+
+    .doctor-home-badge span {
+        color: var(--home-gold);
+        font-size: 10px;
+        letter-spacing: 1.3px;
+        text-transform: uppercase;
+        font-weight: 700;
+    }
+
+    .doctor-home-content {
+        padding-left: 35px;
+    }
+
+    .doctor-home-name {
+        font-family: "Playfair Display", serif;
+        color: var(--home-navy);
+        font-size: 45px;
+        margin-bottom: 4px;
+    }
+
+    .doctor-home-degree {
+        color: var(--home-gold);
+        font-size: 13px;
+        letter-spacing: 1px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .doctor-position-box {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+        background: var(--home-cream);
+        padding: 14px 17px;
+        border-left: 3px solid var(--home-gold);
+        margin-bottom: 25px;
+    }
+
+    .doctor-position-box i {
+        color: var(--home-gold);
+        font-size: 20px;
+    }
+
+    .doctor-position-box span {
+        color: var(--home-navy);
+        font-size: 13px;
+        font-weight: 600;
+    }
+
+    .text-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        color: var(--home-navy);
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 700;
+        margin-top: 15px;
+        transition: 0.3s;
+    }
+
+    .text-link i {
+        color: var(--home-gold);
+        transition: 0.3s;
+    }
+
+    .text-link:hover {
+        color: var(--home-gold);
+    }
+
+    .text-link:hover i {
+        transform: translateX(5px);
+    }
+
+
+    /* =====================================================
+       SPECIALITY STRIP
+    ===================================================== */
+
+    .speciality-strip {
+        background: var(--home-soft);
+        padding: 65px 0;
+        border-top: 1px solid var(--home-border);
+        border-bottom: 1px solid var(--home-border);
+    }
+
+    .speciality-item {
+        text-align: center;
+        padding: 15px 20px;
+        border-right: 1px solid var(--home-border);
+    }
+
+    .speciality-item:last-child {
+        border-right: none;
+    }
+
+    .speciality-item i {
+        display: block;
+        color: var(--home-gold);
+        font-size: 29px;
+        margin-bottom: 15px;
+    }
+
+    .speciality-item strong {
+        display: block;
+        color: var(--home-navy);
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .speciality-item span {
+        color: #77848d;
+        font-size: 11px;
+    }
+
+
+    /* =====================================================
+       SERVICES PREVIEW
+    ===================================================== */
+
+    .services-preview {
+        background: white;
+    }
+
+    .services-preview-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: end;
+        margin-bottom: 50px;
+        gap: 30px;
+    }
+
+    .services-preview-header > div {
+        max-width: 720px;
+    }
+
+    .service-preview-card {
+        height: 100%;
+        border: 1px solid var(--home-border);
+        background: white;
+        overflow: hidden;
+        transition: 0.35s ease;
+    }
+
+    .service-preview-card:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 18px 45px rgba(18,48,71,0.10);
+    }
+
+    .service-preview-image {
+        height: 225px;
+        width: 100%;
+        object-fit: cover;
+        display: block;
+    }
+
+    .service-preview-content {
+        padding: 27px 25px 30px;
+    }
+
+    .service-preview-number {
+        color: var(--home-gold);
+        font-size: 10px;
+        letter-spacing: 2px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+
+    .service-preview-content h3 {
+        color: var(--home-navy);
+        font-family: "Playfair Display", serif;
+        font-size: 23px;
+        margin-bottom: 10px;
+    }
+
+    .service-preview-content p {
+        color: var(--home-text);
+        font-size: 13px;
+        line-height: 1.75;
+        margin: 0;
+    }
+
+    .all-services-button {
+        display: inline-flex;
+        align-items: center;
+        gap: 9px;
+        border: 1px solid var(--home-navy);
+        color: var(--home-navy);
+        padding: 12px 19px;
+        text-decoration: none;
+        font-size: 12px;
+        font-weight: 700;
+        white-space: nowrap;
+        transition: 0.3s;
+    }
+
+    .all-services-button:hover {
+        background: var(--home-navy);
+        color: white;
+    }
+
+
+    /* =====================================================
+       WHY US / IMAGE SECTION
+    ===================================================== */
+
+    .why-section {
+        background: var(--home-cream);
+    }
+
+    .why-image {
+        width: 100%;
+        height: 530px;
+        object-fit: cover;
+    }
+
+    .why-content {
+        padding-left: 45px;
+    }
+
+    .why-list {
+        margin-top: 30px;
+    }
+
+    .why-item {
+        display: flex;
+        gap: 15px;
+        margin-bottom: 25px;
+    }
+
+    .why-number {
+        color: var(--home-gold);
+        font-family: "Playfair Display", serif;
+        font-size: 22px;
+        min-width: 35px;
+    }
+
+    .why-item h4 {
+        color: var(--home-navy);
+        font-size: 15px;
+        font-weight: 700;
+        margin-bottom: 6px;
+    }
+
+    .why-item p {
+        color: var(--home-text);
+        font-size: 13px;
+        line-height: 1.7;
+        margin: 0;
+    }
+
+
+    /* =====================================================
+       CONDITIONS
+    ===================================================== */
+
+    .conditions-preview {
+        background: white;
+    }
+
+    .conditions-box {
+        background:
+            linear-gradient(
+                110deg,
+                rgba(255,255,255,0.98),
+                rgba(255,255,255,0.84)
+            ),
+            url("https://images.unsplash.com/photo-1505751172876-fa1923c5c528?auto=format&fit=crop&w=1800&q=85")
+            center/cover;
+        padding: 75px;
+        border: 1px solid var(--home-border);
+    }
+
+    .condition-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: white;
+        border: 1px solid var(--home-border);
+        padding: 11px 15px;
+        margin: 5px;
+        color: var(--home-navy);
+        font-size: 12px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .condition-pill i {
+        color: var(--home-gold);
+    }
+
+    .condition-pill:hover {
+        border-color: var(--home-gold);
+        transform: translateY(-2px);
+    }
+
+
+    /* =====================================================
+       CLINIC SECTION
+    ===================================================== */
+
+    .clinic-home {
+        background: var(--home-soft);
+    }
+
+    .clinic-home-image {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+    }
+
+    .clinic-home-content {
+        padding-left: 45px;
+    }
+
+    .clinic-home-title {
+        font-family: "Playfair Display", serif;
+        color: var(--home-navy);
+        font-size: 42px;
+        line-height: 1.2;
+        margin-bottom: 20px;
+    }
+
+    .clinic-home-title span {
+        color: var(--home-gold);
+    }
+
+    .clinic-facts {
+        margin-top: 30px;
+    }
+
+    .clinic-fact {
+        display: flex;
+        gap: 13px;
+        margin-bottom: 18px;
+    }
+
+    .clinic-fact i {
+        color: var(--home-gold);
+        font-size: 19px;
+        margin-top: 2px;
+    }
+
+    .clinic-fact strong {
+        display: block;
+        color: var(--home-navy);
+        font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .clinic-fact span {
+        color: var(--home-text);
+        font-size: 12px;
+    }
+
+
+    /* =====================================================
+       TESTIMONIALS
+    ===================================================== */
+
+    .testimonials-section {
+        background: white;
+    }
+
+    .testimonial-card {
+        background: var(--home-cream);
+        border: 1px solid var(--home-border);
+        padding: 35px 30px;
+        height: 100%;
+        position: relative;
+    }
+
+    .testimonial-mark {
+        color: var(--home-gold);
+        font-family: Georgia, serif;
+        font-size: 55px;
+        line-height: 0.6;
+        margin-bottom: 22px;
+    }
+
+    .testimonial-card p {
+        color: var(--home-text);
+        font-family: "Playfair Display", serif;
+        font-size: 17px;
+        line-height: 1.7;
+        margin-bottom: 25px;
+    }
+
+    .testimonial-person {
+        border-top: 1px solid var(--home-border);
+        padding-top: 17px;
+    }
+
+    .testimonial-person strong {
+        color: var(--home-navy);
+        font-size: 13px;
+    }
+
+    .testimonial-person span {
+        display: block;
+        color: var(--home-gold);
+        font-size: 10px;
+        margin-top: 3px;
+    }
+
+
+    /* =====================================================
+       APPOINTMENT CTA
+    ===================================================== */
+
+    .appointment-section {
+        position: relative;
+        padding: 105px 0;
+
+        background:
+            linear-gradient(
+                90deg,
+                rgba(18,48,71,0.93),
+                rgba(18,48,71,0.72)
+            ),
+            url("https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=2000&q=90")
+            center/cover;
+    }
+
+    .appointment-content {
+        max-width: 760px;
+        color: white;
+    }
+
+    .appointment-content .home-eyebrow {
+        color: var(--home-gold-light);
+    }
+
+    .appointment-content h2 {
+        font-family: "Playfair Display", serif;
+        color: white;
+        font-size: clamp(38px, 5vw, 58px);
+        line-height: 1.1;
+        margin-bottom: 18px;
+    }
+
+    .appointment-content h2 span {
+        color: var(--home-gold-light);
+    }
+
+    .appointment-content p {
+        color: rgba(255,255,255,0.72);
+        font-size: 15px;
+        line-height: 1.8;
+        max-width: 650px;
+        margin-bottom: 30px;
+    }
+
+    .appointment-buttons {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px;
+    }
+
+    .appointment-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: var(--home-gold);
+        color: white;
+        text-decoration: none;
+        padding: 15px 27px;
+        font-size: 13px;
+        font-weight: 700;
+        transition: 0.3s;
+    }
+
+    .appointment-primary:hover {
+        background: var(--home-gold-light);
+        color: var(--home-navy);
+    }
+
+    .appointment-phone {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        color: white;
+        text-decoration: none;
+        border: 1px solid rgba(255,255,255,0.35);
+        padding: 14px 23px;
+        font-size: 13px;
+        font-weight: 600;
+        transition: 0.3s;
+    }
+
+    .appointment-phone:hover {
+        color: var(--home-gold-light);
+        border-color: var(--home-gold-light);
+    }
+
+
+    /* =====================================================
+       RESPONSIVE
+    ===================================================== */
+
+    @media (max-width: 991px) {
+
+        .home-section {
+            padding: 75px 0;
+        }
+
+        .home-hero {
+            min-height: 620px;
+        }
+
+        .doctor-home-content,
+        .why-content,
+        .clinic-home-content {
+            padding-left: 0;
+            margin-top: 50px;
+        }
+
+        .doctor-home-image-wrap {
+            padding-right: 20px;
+        }
+
+        .speciality-item {
+            border-right: none;
+            border-bottom: 1px solid var(--home-border);
+        }
+
+        .speciality-item:last-child {
+            border-bottom: none;
+        }
+
+        .conditions-box {
+            padding: 50px 35px;
+        }
+
+        .services-preview-header {
+            align-items: start;
+            flex-direction: column;
+        }
+    }
+
+
+    @media (max-width: 767px) {
+
+        .home-hero {
+            min-height: 650px;
+
+            background:
+                linear-gradient(
+                    180deg,
+                    rgba(255,255,255,0.93),
+                    rgba(255,255,255,0.88)
+                ),
+                url("https://images.unsplash.com/photo-1550831107-1553da8c8464?auto=format&fit=crop&w=1200&q=85")
+                center/cover;
+        }
+
+        .home-hero-content {
+            padding: 60px 15px;
+        }
+
+        .home-hero h1 {
+            font-size: 47px;
+        }
+
+        .hero-credentials {
+            gap: 15px;
+        }
+
+        .doctor-home-image {
+            height: 470px;
+        }
+
+        .doctor-home-name {
+            font-size: 36px;
+        }
+
+        .why-image,
+        .clinic-home-image {
+            height: 350px;
+        }
+
+        .conditions-box {
+            padding: 40px 20px;
+        }
+
+        .appointment-section {
+            padding: 75px 0;
+        }
+
+        .appointment-content {
+            padding: 0 15px;
+        }
+
+    }
