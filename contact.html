@@ -112,7 +112,7 @@
                 <ul class="navbar-nav ms-auto align-items-lg-center">
 
                     <li class="nav-item">
-                        <a class="nav-link active" href="index.html">
+                        <a class="nav-link" href="index.html">
                             Home
                         </a>
                     </li>
@@ -142,7 +142,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
+                        <a class="nav-link active" href="contact.html">
                             Contact
                         </a>
                     </li>
@@ -462,7 +462,7 @@
                             </p>
 
 
-                            <form id="appointmentForm">
+                            <form action="https://formsubmit.co/dr.khalidnoman25@gmail.com" method="POST" id="appointmentForm">
 
                                 <div class="row g-3">
 
@@ -474,6 +474,7 @@
                                         </label>
 
                                         <input
+                                            name="name"
                                             type="text"
                                             class="form-control"
                                             placeholder="Your full name"
@@ -489,6 +490,7 @@
                                         </label>
 
                                         <input
+                                            name="Phone Number"
                                             type="tel"
                                             class="form-control"
                                             placeholder="+91"
@@ -504,6 +506,7 @@
                                         </label>
 
                                         <input
+                                            name="Email Address"
                                             type="email"
                                             class="form-control"
                                             placeholder="Your email address">
@@ -518,6 +521,7 @@
                                         </label>
 
                                         <input
+                                            name="Preferred Date"
                                             type="date"
                                             class="form-control">
 
@@ -530,25 +534,25 @@
                                             Consultation Type
                                         </label>
 
-                                        <select class="form-select">
+                                        <select name="Consultation Type" class="form-select">
 
-                                            <option selected>
+                                            <option value="" selected>
                                                 Select consultation type
                                             </option>
 
-                                            <option>
+                                            <option value="General Consultation">
                                                 General Consultation
                                             </option>
 
-                                            <option>
+                                            <option value="Surgical Consultation">
                                                 Surgical Consultation
                                             </option>
 
-                                            <option>
+                                            <option value="Follow-up Consultation">
                                                 Follow-up Consultation
                                             </option>
 
-                                            <option>
+                                            <option value="Second Opinion">
                                                 Second Opinion
                                             </option>
 
@@ -563,21 +567,21 @@
                                             Preferred Time
                                         </label>
 
-                                        <select class="form-select">
+                                        <select name="Preferred Time" class="form-select">
 
-                                            <option selected>
+                                            <option value="" selected>
                                                 Select preferred time
                                             </option>
 
-                                            <option>
+                                            <option value="Morning">
                                                 Morning
                                             </option>
 
-                                            <option>
+                                            <option value="Afternoon">
                                                 Afternoon
                                             </option>
 
-                                            <option>
+                                            <option value="Evening">
                                                 Evening
                                             </option>
 
@@ -593,6 +597,7 @@
                                         </label>
 
                                         <textarea
+                                            name="Message"
                                             class="form-control"
                                             rows="4"
                                             placeholder="Briefly tell us how we can help you..."></textarea>
