@@ -2780,7 +2780,7 @@
             rgba(5,22,35,.78),
             rgba(5,22,35,.42)
         ),
-        url("https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&w=2200&q=90")
+        url("../images/clinic.png")
         center/cover no-repeat;
 
     animation: heroZoom 12s ease-in-out infinite alternate;
@@ -3913,14 +3913,9 @@
 
     background:
 
-        linear-gradient(
-            90deg,
-            rgba(5,22,35,.96),
-            rgba(5,22,35,.75),
-            rgba(5,22,35,.45)
-        ),
+      
 
-        url("https://images.unsplash.com/photo-1587351021759-3e566b6af7cc?auto=format&fit=crop&w=2200&q=90")
+        url("../images/clinic.png")
         center/cover no-repeat;
 
     animation: galleryZoom 12s ease-in-out infinite alternate;
@@ -3930,11 +3925,11 @@
 @keyframes galleryZoom {
 
     from {
-        background-size: 100%;
+        background-size: 97%;
     }
 
     to {
-        background-size: 108%;
+        background-size: 103%;
     }
 
 }
