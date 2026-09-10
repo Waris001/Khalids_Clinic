@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,7 +14,9 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <link href="assets/css/style.css" rel="stylesheet">
     <!-- <link rel="stylesheet" href="gallery.css"> -->
@@ -23,336 +26,298 @@
 <body>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      TOP BAR
 ===================================================== -->
 
-<div class="top-bar">
-    <div class="container">
+    <div class="top-bar">
+        <div class="container">
 
-        <div class="d-flex justify-content-between align-items-center">
+            <div class="d-flex justify-content-between align-items-center">
 
-            <div class="d-flex gap-4">
+                <div class="d-flex gap-4">
 
-                <a href="tel:+917905763639" class="top-item">
-                    <i class="bi bi-telephone"></i>
-                    +91 7905763639
-                </a>
+                    <a href="tel:+917905763639" class="top-item">
+                        <i class="bi bi-telephone"></i>
+                        +91 7905763639
+                    </a>
 
-                <a href="mailto:dr.khalidnoman25@gmail.com" class="top-item">
-                    <i class="bi bi-envelope"></i>
-                    dr.khalidnoman25@gmail.com
-                </a>
+                    <a href="mailto:dr.khalidnoman25@gmail.com" class="top-item">
+                        <i class="bi bi-envelope"></i>
+                        dr.khalidnoman25@gmail.com
+                    </a>
 
-            </div>
+                </div>
 
-            <div class="top-item">
-                <i class="bi bi-clock"></i>
-                Mon – Fri: 5:30 PM – 8:00 PM
+                <div class="top-item">
+                    <i class="bi bi-clock"></i>
+                    Mon – Fri: 5:30 PM – 8:00 PM
+                </div>
+
             </div>
 
         </div>
-
     </div>
-</div>
 
 
-<!-- =====================================================
+    <!-- =====================================================
      MAIN HEADER
 ===================================================== -->
 
-<header class="main-header sticky-top" id="mainHeader">
+    <header class="main-header sticky-top" id="mainHeader">
 
-    <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg">
 
-        <div class="container">
+            <div class="container">
 
-            <!-- LOGO -->
+                <!-- LOGO -->
 
-            <a href="#" class="clinic-brand">
+                <a href="#" class="clinic-brand">
 
-                <img
-                    src="assets/images/logo.png"
-                    alt="Dr. Khalid's Surgical Clinic"
-                    class="clinic-logo">
+                    <img src="assets/images/logo.png" alt="Dr. Khalid's Surgical Clinic" class="clinic-logo">
 
-                <div class="brand-text">
+                    <div class="brand-text">
 
-                    <span class="brand-name">
-                        Digestive Surgery Clinic
-                    </span>
+                        <span class="brand-name">
+                            Digestive Surgery Clinic
+                        </span>
 
-                    <span class="brand-subtitle">
-                        QUALITY CARE - YOU CAN TRUST
-                    </span>
+                        <span class="brand-subtitle">
+                            QUALITY CARE - YOU CAN TRUST
+                        </span>
+
+                    </div>
+
+                </a>
+
+                <!-- MOBILE TOGGLE -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavigation">
+
+                    <i class="bi bi-list"></i>
+
+                </button>
+
+
+                <!-- NAVIGATION -->
+
+                <div class="collapse navbar-collapse" id="mainNavigation">
+
+                    <ul class="navbar-nav ms-auto align-items-lg-center">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">
+                                Home
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">
+                                About Doctor
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="services.html">
+                                Services
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="facilities.html">
+                                Facilities
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link active" href="gallery.html">
+                                Gallery
+                            </a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">
+                                Contact
+                            </a>
+                        </li>
+
+                        <li class="nav-item header-appointment ms-lg-2">
+
+                            <a href="contact.html#appointment" class="appointment-btn">
+
+                                <i class="bi bi-calendar-check"></i>
+
+                                Book Appointment
+
+                            </a>
+
+                        </li>
+
+                    </ul>
 
                 </div>
-
-            </a>
-            <!-- <a href="assets/images/logo.png" class="clinic-brand">
-
-                <div class="logo-symbol">
-                    <i class="bi bi-heart-pulse"></i>
-                </div>
-
-                <div class="brand-text">
-
-                    <span class="brand-name">
-                        Dr. Khalid's
-                    </span>
-
-                    <span class="brand-subtitle">
-                        Gastrocare & Surgical Clinic
-                    </span>
-
-                </div>
-
-            </a> -->
-
-
-            <!-- MOBILE TOGGLE -->
-
-            <button
-                class="navbar-toggler"
-                type="button"
-                data-bs-toggle="collapse"
-                data-bs-target="#mainNavigation">
-
-                <i class="bi bi-list"></i>
-
-            </button>
-
-
-            <!-- NAVIGATION -->
-
-            <div
-                class="collapse navbar-collapse"
-                id="mainNavigation">
-
-                <ul class="navbar-nav ms-auto align-items-lg-center">
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="index.html">
-                            Home
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">
-                            About Doctor
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="services.html">
-                            Services
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="facilities.html">
-                            Facilities
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link active" href="gallery.html">
-                            Gallery
-                        </a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">
-                            Contact
-                        </a>
-                    </li>
-
-                    <li class="nav-item header-appointment ms-lg-2">
-
-                        <a href="contact.html#appointment" class="appointment-btn">
-
-                            <i class="bi bi-calendar-check"></i>
-
-                            Book Appointment
-
-                        </a>
-
-                    </li>
-
-                </ul>
 
             </div>
 
-        </div>
+        </nav>
 
-    </nav>
-
-</header>
+    </header>
 
 
 
-<!-- =====================================================
+    <!-- =====================================================
      PAGE CONTENT PLACEHOLDER
 ===================================================== -->
 
 
-<div class="gallery-page">
+    <div class="gallery-page">
 
 
-<!-- =====================================================
+        <!-- =====================================================
      HERO
 ===================================================== -->
 
-<section class="gallery-hero">
+        <section class="gallery-hero">
 
-<div class="container">
+            <div class="container">
 
-<div class="gallery-hero-content">
+                <div class="gallery-hero-content">
 
-<span class="gallery-label">
-    Our Gallery
-</span>
+                    <span class="gallery-label">
+                        Our Gallery
+                    </span>
 
-<h1>
+                    <h1>
 
-    A Glimpse Into
-    <br>
+                        A Glimpse Into
+                        <br>
 
-    <span>Our Care Environment.</span>
+                        <span>Our Care Environment.</span>
 
-</h1>
+                    </h1>
 
-<p>
+                    <p>
 
-    Explore the clinical environment, facilities and
-    patient-focused spaces at Digestive Surgery Clinic.
+                        Explore the clinical environment, facilities and
+                        patient-focused spaces at Digestive Surgery Clinic.
 
-</p>
+                    </p>
 
-</div>
+                </div>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
 
 
-<!-- =====================================================
+        <!-- =====================================================
      INTRO
 ===================================================== -->
 
-<section class="gallery-intro">
+        <section class="gallery-intro">
 
-<div class="container">
+            <div class="container">
 
-<span class="gallery-eyebrow">
-    Clinic Gallery
-</span>
+                <span class="gallery-eyebrow">
+                    Clinic Gallery
+                </span>
 
-<h2>
+                <h2>
 
-    Experience Our
-    <span>Clinical Environment</span>
+                    Experience Our
+                    <span>Clinical Environment</span>
 
-</h2>
+                </h2>
 
-<p>
+                <p>
 
-    Take a closer look at our clinic, consultation spaces
-    and professional healthcare environment.
+                    Take a closer look at our clinic, consultation spaces
+                    and professional healthcare environment.
 
-</p>
+                </p>
 
-</div>
+            </div>
 
-</section>
+        </section>
 
 
 
-<!-- =====================================================
+        <!-- =====================================================
      GALLERY
 ===================================================== -->
 
-<section class="gallery-wrapper">
+        <section class="gallery-wrapper">
 
-<div class="container">
+            <div class="container">
 
 
-<!-- FILTER -->
+                <!-- FILTER -->
 
-<div class="gallery-filter">
+                <div class="gallery-filter">
 
-<button
-class="active"
-data-filter="all">
+                    <button class="active" data-filter="all">
 
-All
+                        All
 
-</button>
+                    </button>
 
-<button
-data-filter="clinic">
+                    <button data-filter="clinic">
 
-Clinic
+                        Clinic
 
-</button>
+                    </button>
 
-<button
-data-filter="consultation">
+                    <button data-filter="consultation">
 
-Consultation
+                        Consultation
 
-</button>
+                    </button>
 
-<button
-data-filter="care">
+                    <button data-filter="care">
 
-Patient Care
+                        Patient Care
 
-</button>
+                    </button>
 
-<button
-data-filter="surgical">
+                    <button data-filter="surgical">
 
-Surgical
+                        Surgical
 
-</button>
+                    </button>
 
-</div>
+                </div>
 
 
 
-<!-- GALLERY GRID -->
+                <!-- GALLERY GRID -->
 
-<div class="gallery-grid">
+                <div class="gallery-grid">
 
 
-<!-- 01 -->
+                    <!-- 01 -->
 
-<div class="gallery-item"
-data-category="clinic">
+                    <div class="gallery-item" data-category="clinic">
 
-<img
-src="assets/images/clinicFront.png"
-alt="Clinic interior">
+                        <img src="assets/images/clinicFront.png" alt="Clinic interior">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Clinic
-</span>
+                            <span>
+                                Clinic
+                            </span>
 
-<h3>
-Modern Clinical Environment
-</h3>
+                            <h3>
+                                Modern Clinical Environment
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
@@ -385,506 +350,509 @@ Private Consultation Space
 
 
 
-<!-- 03 -->
+                    <!-- 03 -->
 
-<div class="gallery-item"
-data-category="care">
+                    <div class="gallery-item" data-category="care">
 
-<img
-src="assets/images/team.png"
-alt="Hospital facility">
+                        <img src="assets/images/team.png" alt="Hospital facility">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Patient Care
-</span>
+                            <span>
+                                Patient Care
+                            </span>
 
-<h3>
-Professional Care Environment
-</h3>
+                            <h3>
+                                Professional Care Environment
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 04 -->
+                    <!-- 04 -->
 
-<div class="gallery-item"
-data-category="surgical">
+                    <div class="gallery-item" data-category="surgical">
 
-<img
-src="assets/images/advance_equipment.jpeg"
-alt="Surgical environment">
+                        <img src="assets/images/advance_equipment.jpeg" alt="Surgical environment">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Surgical
-</span>
+                            <span>
+                                Surgical
+                            </span>
 
-<h3>
-Advanced Surgical Environment
-</h3>
+                            <h3>
+                                Advanced Surgical Environment
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 05 -->
+                    <!-- 05 -->
 
-<div class="gallery-item"
-data-category="clinic">
+                    <div class="gallery-item" data-category="clinic">
 
-<img
-src="assets/images/reception_area.png"
-alt="Reception">
+                        <img src="assets/images/reception_area.png" alt="Reception">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Clinic
-</span>
+                            <span>
+                                Clinic
+                            </span>
 
-<h3>
-Welcoming Reception
-</h3>
+                            <h3>
+                                Welcoming Reception
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 06 -->
+                    <!-- 06 -->
 
-<div class="gallery-item"
-data-category="care">
+                    <div class="gallery-item" data-category="care">
 
-<img
-src="assets/images/team1.jpeg"
-alt="Patient care">
+                        <img src="assets/images/team1.jpeg" alt="Patient care">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Patient Care
-</span>
+                            <span>
+                                Patient Care
+                            </span>
 
-<h3>
-Focused Patient Care
-</h3>
+                            <h3>
+                                Focused Patient Care
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 07 -->
+                    <!-- 07 -->
 
-<div class="gallery-item"
-data-category="surgical">
+                    <div class="gallery-item" data-category="surgical">
 
-<img
-src="https://images.unsplash.com/photo-1538108149393-fbbd81895907?auto=format&fit=crop&w=1000&q=90"
-alt="Surgical facility">
+                        <img src="assets/images/1.jpeg"
+                            alt="Surgical facility">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Surgical
-</span>
+                            <span>
+                                Surgical
+                            </span>
 
-<h3>
-Surgical Care Facilities
-</h3>
+                            <h3>
+                                Surgical Care Facilities
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 08 -->
+                    <!-- 08 -->
 
-<div class="gallery-item"
-data-category="clinic">
+                    <div class="gallery-item" data-category="clinic">
 
-<img
-src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=90"
-alt="Medical facility">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?auto=format&fit=crop&w=1000&q=90"
+                            alt="Medical facility">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Clinic
-</span>
+                            <span>
+                                Clinic
+                            </span>
 
-<h3>
-Professional Medical Setting
-</h3>
+                            <h3>
+                                Professional Medical Setting
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
 
 
-<!-- 09 -->
+                    <!-- 09 -->
 
-<div class="gallery-item"
-data-category="consultation">
+                    <div class="gallery-item" data-category="consultation">
 
-<img
-src="https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1000&q=90"
-alt="Consultation">
+                        <img src="assets/images/7.png"
+                            alt="Consultation">
 
-<div class="gallery-overlay">
+                        <div class="gallery-overlay">
 
-<span>
-Consultation
-</span>
+                            <span>
+                                Consultation
+                            </span>
 
-<h3>
-Patient Consultation
-</h3>
+                            <h3>
+                                Patient Consultation
+                            </h3>
 
-<div class="gallery-zoom">
-<i class="bi bi-arrows-fullscreen"></i>
-</div>
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-</div>
+                        </div>
 
-</div>
+                    </div>
 
+                    <!-- 10 -->
+                     <div class="gallery-item" data-category="surgical">
 
-</div>
+                        <img src="assets/images/2.jpeg" alt="Surgical facility">
 
-</div>
+                        <div class="gallery-overlay">
 
-</section>
+                            <span>
+                                Surgical
+                            </span>
 
+                            <h3>
+                                Surgical facilities
+                            </h3>
 
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
 
-<!-- =====================================================
+                        </div>
+
+                    </div>
+
+                    <!-- 11 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/3.jpeg" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical facilities
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 12 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/4.jpeg" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical facilities
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 13 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/5.jpeg" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical Equipments
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 14 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/6.jpeg" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical Equipments
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 15 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/9.jpeg" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical Equipments
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- 16 -->
+                     <div class="gallery-item" data-category="surgical">
+
+                        <img src="assets/images/9.png" alt="Surgical facility">
+
+                        <div class="gallery-overlay">
+
+                            <span>
+                                Surgical
+                            </span>
+
+                            <h3>
+                                Surgical facilities
+                            </h3>
+
+                            <div class="gallery-zoom">
+                                <i class="bi bi-arrows-fullscreen"></i>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+        <!-- =====================================================
      CTA
 ===================================================== -->
 
-<section class="gallery-cta">
+        <section class="gallery-cta">
 
-<div class="container">
+            <div class="container">
 
-<span class="gallery-eyebrow"
-style="justify-content:center;">
+                <span class="gallery-eyebrow" style="justify-content:center;">
 
-    Digestive Surgery Clinic
+                    Digestive Surgery Clinic
 
-</span>
+                </span>
 
-<h2>
-    Have Questions About Your Condition?
-</h2>
+                <h2>
+                    Have Questions About Your Condition?
+                </h2>
 
-<p>
+                <p>
 
-    Schedule a consultation with Dr. Khalid Noman
-    and discuss your symptoms, diagnosis and
-    treatment options.
-
-</p>
-
-<a href="contact.html#appointment"
-
-<i class="bi bi-calendar-check"></i>
-
-Book a Consultation
-
-</a>
-
-</div>
-
-</section>
-
-
-</div>
-
-
-
-<!-- =====================================================
-     LIGHTBOX
-===================================================== -->
-
-<div class="gallery-lightbox"
-id="galleryLightbox">
-
-<button
-class="lightbox-close"
-id="lightboxClose">
-
-<i class="bi bi-x-lg"></i>
-
-</button>
-
-
-<button
-class="lightbox-prev"
-id="lightboxPrev">
-
-<i class="bi bi-chevron-left"></i>
-
-</button>
-
-
-<img
-src=""
-alt=""
-class="lightbox-image"
-id="lightboxImage">
-
-
-<button
-class="lightbox-next"
-id="lightboxNext">
-
-<i class="bi bi-chevron-right"></i>
-
-</button>
-
-
-<div
-class="lightbox-caption"
-id="lightboxCaption">
-</div>
-
-</div>
-
-
-
-
-
-
-<script src="gallery.js"></script>
-
-
-<!-- BACK TO TOP -->
-<a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
-    <i class="bi bi-arrow-up"></i>
-</a>
-
-
-
-
-
-<!-- =====================================================
-     FOOTER
-===================================================== -->
-
-<footer class="footer">
-
-    <div class="container">
-
-        <div class="row g-5">
-
-
-            <!-- ABOUT -->
-
-            <div class="col-lg-4 col-md-6 footer-column">
-
-                <a href="assets/images/logo.png" class="footer-brand">
-
-                    <div class="brand-text">
-
-                        <span class="brand-name">
-                            Digestive Surgery Clinic
-                        </span>
-
-                        <span class="brand-subtitle">
-                            QUALITY CARE - YOU CAN TRUST
-                        </span>
-
-                    </div>
-
-                </a>
-
-                <p class="footer-about">
-
-                    Providing compassionate, professional and
-                    patient-focused surgical care with modern
-                    medical facilities and personalized attention.
+                    Schedule a consultation with Dr. Khalid Noman
+                    and discuss your symptoms, diagnosis and
+                    treatment options.
 
                 </p>
 
+                <a href="contact.html#appointment" <i class="bi bi-calendar-check"></i>
 
-                <div class="social-links">
+                    Book a Consultation
 
-                    <a href="#" aria-label="Facebook">
-                        <i class="bi bi-facebook"></i>
-                    </a>
-
-                    <a href="#" aria-label="Instagram">
-                        <i class="bi bi-instagram"></i>
-                    </a>
-
-                    <a href="#" aria-label="YouTube">
-                        <i class="bi bi-youtube"></i>
-                    </a>
-
-                    <a href="https://wa.me/917905763639" 
-                        target="_blank" 
-                        rel="noopener noreferrer"
-                        aria-label="WhatsApp">
-                        <i class="bi bi-whatsapp"></i>
-                    </a>
-
-                </div>
+                </a>
 
             </div>
 
-
-            <!-- QUICK LINKS -->
-
-            <div class="col-lg-2 col-md-6 footer-column">
-
-                <h5 class="footer-title">
-                    Quick Links
-                </h5>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="about.html">About Doctor</a>
-                    </li>
-
-                    <li>
-                        <a href="services.html">Our Services</a>
-                    </li>
-
-                    <li>
-                        <a href="facilities.html">Facilities</a>
-                    </li>
-
-                    <li>
-                        <a href="gallery.html">Gallery</a>
-                    </li>
-
-                    <li>
-                        <a href="contact.html">Contact</a>
-                    </li>
-
-                </ul>
-
-            </div>
+        </section>
 
 
-            <!-- SERVICES -->
-
-            <div class="col-lg-2 col-md-6 footer-column">
-
-                <h5 class="footer-title">
-                    Services
-                </h5>
-
-                <ul class="footer-links">
-
-                    <li>
-                        <a href="#">General Surgery</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Laparoscopic Surgery</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Gallbladder Surgery</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Hernia Surgery</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Appendix Surgery</a>
-                    </li>
-
-                    <li>
-                        <a href="#">Proctology</a>
-                    </li>
-
-                </ul>
-
-            </div>
+    </div>
 
 
-            <!-- CONTACT -->
 
-            <div class="col-lg-4 col-md-6 footer-column">
+    <!-- =====================================================
+     LIGHTBOX
+===================================================== -->
 
-                <h5 class="footer-title">
-                    Contact Us
-                </h5>
+    <div class="gallery-lightbox" id="galleryLightbox">
 
+        <button class="lightbox-close" id="lightboxClose">
 
-                <div class="footer-contact">
+            <i class="bi bi-x-lg"></i>
 
-                    <i class="bi bi-geo-alt"></i>
-
-                    <div>
-                        Clinic Address<br>
-                        <span>
-                            12/703, Sectot 12, <br>
-                            Indira Nagar, 
-                            Lucknow
-                        </span>
-                    </div>
-
-                </div>
+        </button>
 
 
-                <div class="footer-contact">
+        <button class="lightbox-prev" id="lightboxPrev">
 
-                    <i class="bi bi-telephone"></i>
+            <i class="bi bi-chevron-left"></i>
 
-                    <div>
+        </button>
 
-                        <a
-                            href="tel:+917905763639"
-                            style="color:inherit;text-decoration:none;">
 
-                            +91 79057 63639
+        <img src="" alt="" class="lightbox-image" id="lightboxImage">
 
+
+        <button class="lightbox-next" id="lightboxNext">
+
+            <i class="bi bi-chevron-right"></i>
+
+        </button>
+
+
+        <div class="lightbox-caption" id="lightboxCaption">
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="gallery.js"></script>
+
+
+    <!-- BACK TO TOP -->
+    <a href="#" class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+
+
+
+
+    <!-- =====================================================
+     FOOTER
+===================================================== -->
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="row g-5">
+
+
+                <!-- ABOUT -->
+
+                <div class="col-lg-4 col-md-6 footer-column">
+
+                    <a href="assets/images/logo.png" class="footer-brand">
+
+                        <div class="brand-text">
+
+                            <span class="brand-name">
+                                Digestive Surgery Clinic
+                            </span>
+
+                            <span class="brand-subtitle">
+                                QUALITY CARE - YOU CAN TRUST
+                            </span>
+
+                        </div>
+
+                    </a>
+
+                    <p class="footer-about">
+
+                        Providing compassionate, professional and
+                        patient-focused surgical care with modern
+                        medical facilities and personalized attention.
+
+                    </p>
+
+
+                    <div class="social-links">
+
+                        <a href="#" aria-label="Facebook">
+                            <i class="bi bi-facebook"></i>
+                        </a>
+
+                        <a href="#" aria-label="Instagram">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+
+                        <a href="#" aria-label="YouTube">
+                            <i class="bi bi-youtube"></i>
+                        </a>
+
+                        <a href="https://wa.me/917905763639" target="_blank" rel="noopener noreferrer"
+                            aria-label="WhatsApp">
+                            <i class="bi bi-whatsapp"></i>
                         </a>
 
                     </div>
@@ -892,51 +860,202 @@ id="lightboxCaption">
                 </div>
 
 
-                <div class="footer-contact">
+                <!-- QUICK LINKS -->
 
-                    <i class="bi bi-envelope"></i>
+                <div class="col-lg-2 col-md-6 footer-column">
 
-                    <div>
+                    <h5 class="footer-title">
+                        Quick Links
+                    </h5>
 
-                        <a
-                            href="mailto:dr.khalidnoman25@gmail.com"
-                            style="color:inherit;text-decoration:none;">
+                    <ul class="footer-links">
 
-                            dr.khalidnoman25@gmail.com
+                        <li>
+                            <a href="index.html">Home</a>
+                        </li>
 
-                        </a>
+                        <li>
+                            <a href="about.html">About Doctor</a>
+                        </li>
 
-                    </div>
+                        <li>
+                            <a href="services.html">Our Services</a>
+                        </li>
+
+                        <li>
+                            <a href="facilities.html">Facilities</a>
+                        </li>
+
+                        <li>
+                            <a href="gallery.html">Gallery</a>
+                        </li>
+
+                        <li>
+                            <a href="contact.html">Contact</a>
+                        </li>
+
+                    </ul>
 
                 </div>
 
 
-                <h6
-                    style="
+                <!-- SERVICES -->
+
+                <div class="col-lg-2 col-md-6 footer-column">
+
+                    <h5 class="footer-title">
+                        Services
+                    </h5>
+
+                    <ul class="footer-links">
+
+                        <li>
+                            <a href="#">General Surgery</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Laparoscopic Surgery</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Gallbladder Surgery</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Hernia Surgery</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Appendix Surgery</a>
+                        </li>
+
+                        <li>
+                            <a href="#">Proctology</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+
+                <!-- CONTACT -->
+
+                <div class="col-lg-4 col-md-6 footer-column">
+
+                    <h5 class="footer-title">
+                        Contact Us
+                    </h5>
+
+
+                    <div class="footer-contact">
+
+                        <i class="bi bi-geo-alt"></i>
+
+                        <div>
+                            Clinic Address<br>
+                            <span>
+                                12/703, Sectot 12, <br>
+                                Indira Nagar,
+                                Lucknow
+                            </span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-contact">
+
+                        <i class="bi bi-telephone"></i>
+
+                        <div>
+
+                            <a href="tel:+917905763639" style="color:inherit;text-decoration:none;">
+
+                                +91 79057 63639
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="footer-contact">
+
+                        <i class="bi bi-envelope"></i>
+
+                        <div>
+
+                            <a href="mailto:dr.khalidnoman25@gmail.com" style="color:inherit;text-decoration:none;">
+
+                                dr.khalidnoman25@gmail.com
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                    <h6 style="
                     color:white;
                     font-size:13px;
                     margin-top:25px;
                     margin-bottom:10px;
                     ">
 
-                    Opening Hours
+                        Opening Hours
 
-                </h6>
+                    </h6>
 
 
-                <div class="hours-row">
+                    <div class="hours-row">
 
-                    <span>Monday – Friday</span>
+                        <span>Monday – Friday</span>
 
-                    <span>5:30 PM – 8:00 PM</span>
+                        <span>5:30 PM – 8:00 PM</span>
+
+                    </div>
+
+                    <div class="hours-row">
+
+                        <span>Sunday</span>
+
+                        <span>Emergency Only</span>
+
+                    </div>
 
                 </div>
 
-                <div class="hours-row">
+            </div>
 
-                    <span>Sunday</span>
 
-                    <span>Emergency Only</span>
+            <!-- FOOTER BOTTOM -->
+
+            <div class="footer-bottom">
+
+                <div class="row align-items-center">
+
+                    <div class="col-md-6 text-center text-md-start">
+
+                        © <span id="currentYear"></span>
+                        <strong> Digestive Surgery Clinic.</strong>
+                        All Rights Reserved.
+                        <br>
+                        Designed & Developed by <a href="https://www.nexatechit.com/"
+                            style="color: gold;text-decoration:solid;">NexaTech IT</a>
+
+                    </div>
+
+                    <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
+
+                        <a href="privacypolicy.html">Privacy Policy</a>
+
+                        <span class="mx-2">|</span>
+
+                        <a href="terms&condition.html">Terms & Conditions</a>
+
+                    </div>
 
                 </div>
 
@@ -944,60 +1063,25 @@ id="lightboxCaption">
 
         </div>
 
-
-        <!-- FOOTER BOTTOM -->
-
-        <div class="footer-bottom">
-
-            <div class="row align-items-center">
-
-                <div class="col-md-6 text-center text-md-start">
-
-                    © <span id="currentYear"></span>
-                   <strong> Digestive Surgery Clinic.</strong>
-                    All Rights Reserved.
-                    <br>
-                    Designed & Developed by <a href="https://www.nexatechit.com/" style="color: gold;text-decoration:solid;">NexaTech IT</a>
-
-                </div>
-
-                <div class="col-md-6 text-center text-md-end mt-2 mt-md-0">
-
-                    <a href="privacypolicy.html">Privacy Policy</a>
-
-                    <span class="mx-2">|</span>
-
-                    <a href="terms&condition.html">Terms & Conditions</a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</footer>
+    </footer>
 
 
-<!-- FLOATING APPOINTMENT -->
+    <!-- FLOATING APPOINTMENT -->
 
-<a
-    href="contact.html#appointment"
-    class="floating-appointment"
-    title="Book Appointment">
+    <a href="contact.html#appointment" class="floating-appointment" title="Book Appointment">
 
-    <i class="bi bi-calendar-plus"></i>
+        <i class="bi bi-calendar-plus"></i>
 
-</a>
+    </a>
 
 
-<!-- Bootstrap JS -->
+    <!-- Bootstrap JS -->
 
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 
-<script src="script.js"></script>
+    <script src="script.js"></script>
 
 </body>
+
 </html>
