@@ -539,11 +539,26 @@
                         </a>
 
                     </li>
+                    <li>
+                        <div class="language-switch">
+                            <span class="language-label">EN</span>
+
+                            <label class="switch">
+                                <input type="checkbox" id="languageToggle">
+                                <span class="slider"></span>
+                            </label>
+
+                            <span class="language-label">हिंदी</span>
+                        </div>
+
+                        <div id="google_translate_element" style="display:none;"></div>
+                    </li>
 
                 </ul>
+                
 
             </div>
-
+            
         </div>
 
     </nav>
@@ -2307,5 +2322,66 @@
 <script src="script.js"></script>
 
 <script src="home.js"></script>
+
+<script>
+    function googleTranslateElementInit() {
+        new google.translate.TranslateElement({
+            pageLanguage: 'en',
+            includedLanguages: 'en,hi',
+            autoDisplay: false
+        }, 'google_translate_element');
+
+        // Wait until Google creates its select box
+        waitForGoogleTranslate();
+    }
+
+
+    function waitForGoogleTranslate() {
+
+        const translateSelect = document.querySelector('.goog-te-combo');
+
+        if (translateSelect) {
+
+            const toggle = document.getElementById('languageToggle');
+
+            toggle.addEventListener('change', function () {
+
+                if (this.checked) {
+                    translatePage('hi');
+                } else {
+                    translatePage('en');
+                }
+
+            });
+
+            return;
+        }
+
+        // Google Translate hasn't loaded yet
+        setTimeout(waitForGoogleTranslate, 300);
+    }
+
+
+    function translatePage(language) {
+
+        const translateSelect = document.querySelector('.goog-te-combo');
+
+        if (!translateSelect) {
+            console.log("Google Translate is not ready");
+            return;
+        }
+
+        translateSelect.value = language;
+
+        translateSelect.dispatchEvent(
+            new Event('change', { bubbles: true })
+        );
+    }
+</script>
+
+
+<script
+    src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit">
+</script>
 </body>
 </html>
