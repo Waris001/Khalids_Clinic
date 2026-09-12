@@ -2442,6 +2442,29 @@
         margin: 0;
     }
 
+    /* =========================================
+   SCROLL REVEAL ANIMATION
+   ========================================= */
+
+.procedure-card {
+    opacity: 0;
+    transform: translateY(70px) scale(0.94);
+    filter: blur(6px);
+
+    transition:
+        opacity 0.8s ease,
+        transform 0.8s cubic-bezier(0.22, 1, 0.36, 1),
+        filter 0.8s ease;
+}
+
+
+/* When card becomes visible */
+.procedure-card.show {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+    filter: blur(0);
+}
+
 
     /* =====================================================
        FEATURED SERVICE

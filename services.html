@@ -1749,6 +1749,52 @@
 
 
     <script src="script.js"></script>
+    <script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const cards = document.querySelectorAll(".procedure-card");
+
+    const observer = new IntersectionObserver((entries) => {
+
+        entries.forEach(entry => {
+
+            if (entry.isIntersecting) {
+
+                const card = entry.target;
+
+                /* Small delay between cards */
+                setTimeout(() => {
+                    card.classList.add("show");
+                }, card.dataset.delay);
+
+                /* Stop observing after animation */
+                observer.unobserve(card);
+            }
+
+        });
+
+    }, {
+        threshold: 0.15
+    });
+
+
+    cards.forEach((card, index) => {
+
+        /*
+         * Creates a loading sequence:
+         * 1st card → 0ms
+         * 2nd card → 100ms
+         * 3rd card → 200ms
+         * etc.
+         */
+        card.dataset.delay = index * 100;
+
+        observer.observe(card);
+
+    });
+
+});
+</script>
 
 </body>
 
